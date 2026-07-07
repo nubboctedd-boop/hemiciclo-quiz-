@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
+            background-color: #f4f6f9;
+            color: #333333;
             margin: 0;
             display: flex;
             justify-content: center;
@@ -16,31 +16,36 @@
             min-height: 100vh;
         }
         .quiz-container {
-            background-color: #1e1e1e;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            max-width: 500px;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            max-width: 550px;
             width: 100%;
             text-align: center;
+            border-top: 6px solid #003366;
         }
         h1 {
-            color: #4CAF50;
+            color: #003366;
             margin-top: 0;
+            font-size: 1.8em;
+            font-weight: 600;
         }
         .score {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #aaa;
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: #555555;
+            font-weight: 500;
         }
         .photo-container {
-            width: 200px;
-            height: 200px;
+            width: 220px;
+            height: 220px;
             margin: 0 auto 30px;
-            border-radius: 50%;
+            border-radius: 8px;
             overflow: hidden;
-            border: 4px solid #333;
-            background-color: #2a2a2a;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         .photo-container img {
             width: 100%;
@@ -50,75 +55,83 @@
         .options-container {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
         }
         .option-btn {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 15px;
-            border-radius: 8px;
-            font-size: 16px;
+            background-color: #ffffff;
+            color: #333333;
+            border: 1px solid #ccc;
+            padding: 14px;
+            border-radius: 6px;
+            font-size: 15px;
             cursor: pointer;
-            transition: background-color 0.2s, transform 0.1s;
+            transition: all 0.2s;
+            text-align: left;
+            padding-left: 20px;
         }
         .option-btn:hover {
-            background-color: #4CAF50;
-            transform: translateY(-2px);
-        }
-        .option-btn:active {
-            transform: translateY(0);
+            background-color: #f0f4f8;
+            border-color: #003366;
         }
         .option-btn.correct {
-            background-color: #4CAF50;
+            background-color: #e8f5e9;
+            border-color: #4CAF50;
+            color: #2e7d32;
         }
         .option-btn.wrong {
-            background-color: #f44336;
+            background-color: #ffebee;
+            border-color: #f44336;
+            color: #c62828;
         }
         #next-btn {
-            margin-top: 30px;
-            background-color: #2196F3;
+            margin-top: 25px;
+            background-color: #003366;
             color: white;
             border: none;
-            padding: 12px 25px;
-            border-radius: 8px;
+            padding: 12px 30px;
+            border-radius: 6px;
             font-size: 16px;
             cursor: pointer;
             display: none;
+            font-weight: 500;
+            width: 100%;
         }
         #next-btn:hover {
-            background-color: #0b7dda;
+            background-color: #002244;
         }
         #back-btn {
             position: absolute;
             top: 20px;
             left: 20px;
-            color: #aaa;
+            color: #003366;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 15px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
         }
         #back-btn:hover {
-            color: white;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-<a href="index.html" id="back-btn">← Volver al menú</a>
+<a href="index.html" id="back-btn">← Volver al Panel</a>
 
 <div class="quiz-container">
-    <h1>¿Quién es este candidato?</h1>
-    <div class="score">Puntuación: <span id="score-val">0</span> / <span id="total-val">0</span></div>
+    <h1>Identificación de Candidato</h1>
+    <div class="score">Aciertos: <span id="score-val">0</span> / <span id="total-val">0</span> intentos</div>
     
     <div class="photo-container">
-        <img id="candidate-photo" src="" alt="Candidato">
+        <img id="candidate-photo" src="" alt="Registro Fotográfico">
     </div>
     
     <div class="options-container" id="options">
         <!-- Los botones se generarán dinámicamente -->
     </div>
     
-    <button id="next-btn" onclick="loadNextQuestion()">Siguiente Candidato</button>
+    <button id="next-btn" onclick="loadNextQuestion()">Siguiente Registro</button>
 </div>
 
 <script>
@@ -138,10 +151,10 @@
             if (chamberParam === 'senado' || chamberParam === 'diputados') {
                 candidatos = data.filter(c => c.chamber === chamberParam);
                 const title = chamberParam === 'senado' ? 'Senador' : 'Diputado';
-                document.querySelector('h1').textContent = `¿Quién es este ${title}?`;
+                document.querySelector('h1').textContent = `Identificación de ${title}`;
             } else {
                 candidatos = data;
-                document.querySelector('h1').textContent = `¿Quién es este candidato?`;
+                document.querySelector('h1').textContent = `Identificación de Candidato`;
             }
             loadNextQuestion();
         })

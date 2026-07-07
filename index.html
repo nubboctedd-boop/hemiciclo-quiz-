@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
+            background-color: #f4f6f9;
+            color: #333333;
             margin: 0;
             display: flex;
             justify-content: center;
@@ -17,69 +17,75 @@
             text-align: center;
         }
         .container {
-            background-color: #1e1e1e;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-            max-width: 600px;
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            max-width: 650px;
             width: 90%;
+            border-top: 6px solid #003366;
         }
         h1 {
-            color: #4CAF50;
+            color: #003366;
             margin-top: 0;
-            font-size: 2.5em;
+            font-size: 2.2em;
+            font-weight: 600;
         }
         p {
-            font-size: 1.2em;
-            color: #aaa;
+            font-size: 1.1em;
+            color: #555555;
             margin-bottom: 40px;
+            line-height: 1.5;
         }
         .menu-options {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 15px;
         }
         a.btn {
-            background-color: #333;
-            color: white;
+            background-color: #ffffff;
+            color: #003366;
             text-decoration: none;
-            padding: 20px;
-            border-radius: 12px;
-            font-size: 1.5em;
-            font-weight: bold;
-            transition: background-color 0.2s, transform 0.1s;
-            border: 2px solid transparent;
+            padding: 18px;
+            border-radius: 6px;
+            font-size: 1.3em;
+            font-weight: 500;
+            transition: all 0.2s;
+            border: 2px solid #e0e0e0;
         }
         a.btn:hover {
-            background-color: #2a2a2a;
-            border-color: #4CAF50;
-            transform: translateY(-4px);
+            background-color: #f0f4f8;
+            border-color: #003366;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 51, 102, 0.1);
         }
         a.btn:active {
             transform: translateY(0);
         }
         .senado {
-            color: #ff9800 !important;
+            color: #d32f2f !important;
+            font-weight: 600;
         }
         .diputados {
-            color: #03a9f4 !important;
+            color: #0056b3 !important;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>¿A quién conoces?</h1>
-    <p>Elige la cámara que quieres poner a prueba y adivina el candidato.</p>
+    <h1>Herramienta de Reconocimiento Parlamentario</h1>
+    <p>Sistema de entrenamiento visual para el equipo. Seleccione la cámara correspondiente para iniciar la sesión de identificación de candidatos al Congreso 2026.</p>
     
     <div class="menu-options">
-        <a href="quiz.html?chamber=senado" class="btn"><span class="senado">🏛️ Quiz de Senadores</span> (60)</a>
-        <a href="quiz.html?chamber=diputados" class="btn"><span class="diputados">👥 Quiz de Diputados</span> (130)</a>
-        <a href="quiz.html?chamber=todos" class="btn" style="font-size: 1.2em; padding: 15px;">Mezclar Todos (190)</a>
+        <a href="quiz.html?chamber=senado" class="btn"><span class="senado">Módulo: Senado</span> (60 escaños)</a>
+        <a href="quiz.html?chamber=diputados" class="btn"><span class="diputados">Módulo: Diputados</span> (130 escaños)</a>
+        <a href="quiz.html?chamber=todos" class="btn" style="font-size: 1.1em; padding: 14px; color: #555;">Evaluación General (190 escaños)</a>
     </div>
 
-    <div style="margin-top: 35px; color: #777; font-size: 0.95em; font-style: italic; letter-spacing: 0.5px;">
-        Creado por Maythe Vásquez
+    <div style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; color: #777; font-size: 0.9em; font-weight: 500;">
+        Gestión y Desarrollo: Mg. Maythe Vásquez
     </div>
 </div>
 
