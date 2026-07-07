@@ -161,9 +161,11 @@
                 candidatos = data.filter(c => c.chamber === chamberParam);
                 const title = chamberParam === 'senado' ? 'Senador' : 'Diputado';
                 document.querySelector('h1').textContent = `Identificación de ${title}`;
+                document.title = `Módulo: ${title}es - Partido BG`; // Cambia el título para Analytics
             } else {
                 candidatos = data;
                 document.querySelector('h1').textContent = `Identificación de Candidato`;
+                document.title = `Evaluación General - Partido BG`; // Cambia el título para Analytics
             }
             loadNextQuestion();
         })
