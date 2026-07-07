@@ -132,7 +132,7 @@
     const chamberParam = urlParams.get('chamber');
 
     // Cargar datos
-    fetch('candidatos.json')
+    fetch('candidatos.json?v=' + new Date().getTime())
         .then(res => res.json())
         .then(data => {
             if (chamberParam === 'senado' || chamberParam === 'diputados') {
