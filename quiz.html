@@ -14,9 +14,15 @@
       // Leer la URL para enviar el título correcto a Analytics inmediatamente
       const params = new URLSearchParams(window.location.search);
       const ch = params.get('chamber');
+      const p = params.get('party');
+      
       let pageTitle = 'Evaluación General';
       if (ch === 'senado') pageTitle = 'Módulo: Senadores';
       if (ch === 'diputados') pageTitle = 'Módulo: Diputados';
+      
+      if (p) {
+          pageTitle += ' (' + p + ')';
+      }
 
       gtag('config', 'G-VWZ5Y1JWMT', {
           'page_title': pageTitle
