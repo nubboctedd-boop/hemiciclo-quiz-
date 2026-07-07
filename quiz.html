@@ -19,7 +19,7 @@
       
       let pageTitle = 'Evaluación General';
       if (mode === 'revancha') {
-          pageTitle = 'Modo Revancha';
+          pageTitle = 'Módulo de Reforzamiento';
       } else {
           if (ch === 'senado') pageTitle = 'Módulo: Senadores';
           if (ch === 'diputados') pageTitle = 'Módulo: Diputados';
@@ -184,11 +184,11 @@
                 const errores = JSON.parse(localStorage.getItem('hemiciclo_errores') || '[]');
                 filtered = data.filter(c => errores.includes(c.dni));
                 
-                document.querySelector('h1').textContent = `Modo Revancha`;
-                document.title = `Modo Revancha`;
+                document.querySelector('h1').textContent = `Módulo de Reforzamiento`;
+                document.title = `Módulo de Reforzamiento`;
                 
                 if (filtered.length === 0) {
-                    document.querySelector('.options-container').innerHTML = '<p>¡Felicidades! Ya repasaste todos tus errores. <a href="index.html">Volver al menú</a></p>';
+                    document.querySelector('.options-container').innerHTML = '<p>¡Felicidades! Ha completado su módulo de reforzamiento con éxito. <a href="index.html">Volver al menú</a></p>';
                     return;
                 }
             } else {
