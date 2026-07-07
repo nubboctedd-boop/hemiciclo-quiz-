@@ -187,7 +187,11 @@
         roundCandidates.forEach(cand => {
             const btn = document.createElement('button');
             btn.className = 'option-btn';
-            btn.innerHTML = `<strong>${cand.name}</strong><br><span style="font-size:0.8em; color:#bbb">${cand.partyName || cand.partyCode}</span>`;
+            
+            // Si el distrito es "Distrito Nacional Único" podemos acortarlo
+            let regionStr = cand.districtName === 'Distrito Nacional Único' ? 'Nacional' : cand.districtName;
+            
+            btn.innerHTML = `<strong>${cand.name}</strong><br><span style="font-size:0.85em; color:#777">${cand.partyName || cand.partyCode} &nbsp;•&nbsp; ${regionStr}</span>`;
             btn.onclick = () => checkAnswer(btn, cand);
             optionsContainer.appendChild(btn);
         });
