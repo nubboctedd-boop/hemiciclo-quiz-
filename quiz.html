@@ -89,9 +89,22 @@
         #next-btn:hover {
             background-color: #0b7dda;
         }
+        #back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        #back-btn:hover {
+            color: white;
+        }
     </style>
 </head>
 <body>
+
+<a href="index.html" id="back-btn">← Volver al menú</a>
 
 <div class="quiz-container">
     <h1>¿Quién es este candidato?</h1>
@@ -114,11 +127,22 @@
     let score = 0;
     let total = 0;
 
+    // Obtener parametro de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const chamberParam = urlParams.get('chamber');
+
     // Cargar datos
     fetch('candidatos.json')
         .then(res => res.json())
         .then(data => {
-            candidatos = data;
+            if (chamberParam === 'senado' || chamberParam === 'diputados') {
+                candidatos = data.filter(c => c.chamber === chamberParam);
+                const title = chamberParam === 'senado' ? 'Senador' : 'Diputado';
+                document.querySelector('h1').textContent = `¿Quién es este ${title}?`;
+            } else {
+                candidatos = data;
+                document.querySelector('h1').textContent = `¿Quién es este candidato?`;
+            }
             loadNextQuestion();
         })
         .catch(err => {

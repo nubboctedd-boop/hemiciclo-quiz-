@@ -3,198 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Propio Hemiciclo</title>
+    <title>Quiz Congreso 2026</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
             margin: 0;
-            padding: 20px;
-        }
-        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             text-align: center;
-            color: #333;
         }
         .container {
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-top: 0;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+        .menu-options {
             display: flex;
+            flex-direction: column;
             gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
         }
-        .hemiciclo {
-            flex: 2;
-            background: white;
+        a.btn {
+            background-color: #333;
+            color: white;
+            text-decoration: none;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .butacas-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
-        .butaca {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #ddd;
-            cursor: pointer;
-            border: 2px solid transparent;
-            transition: all 0.2s;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .butaca img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: none;
-        }
-        .butaca.selected {
-            border-color: #007bff;
-            transform: scale(1.1);
-        }
-        .butaca.occupied {
-            background-color: #4CAF50;
-        }
-        .butaca.occupied img {
-            display: block;
-        }
-        .panel {
-            flex: 1;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-        .candidato-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .candidato-item:hover {
-            background: #f0f8ff;
-        }
-        .candidato-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        .candidato-info {
-            flex: 1;
-        }
-        .candidato-name {
+            border-radius: 12px;
+            font-size: 1.5em;
             font-weight: bold;
-            font-size: 14px;
+            transition: background-color 0.2s, transform 0.1s;
+            border: 2px solid transparent;
         }
-        .candidato-party {
-            font-size: 12px;
-            color: #666;
+        a.btn:hover {
+            background-color: #2a2a2a;
+            border-color: #4CAF50;
+            transform: translateY(-4px);
+        }
+        a.btn:active {
+            transform: translateY(0);
+        }
+        .senado {
+            color: #ff9800 !important;
+        }
+        .diputados {
+            color: #03a9f4 !important;
         }
     </style>
 </head>
 <body>
 
-    <h1>Mi Propio Hemiciclo - Congreso 2026</h1>
-
-    <div class="container">
-        <div class="hemiciclo">
-            <h3>Hemiciclo (Selecciona una butaca)</h3>
-            <div class="butacas-container" id="butacas">
-                <!-- Se generarán 130 butacas de ejemplo -->
-            </div>
-        </div>
-
-        <div class="panel">
-            <h3>Lista de Candidatos</h3>
-            <p style="font-size: 12px; color: #666;">Selecciona un candidato para asignarlo a la butaca seleccionada.</p>
-            <div id="lista-candidatos">
-                Cargando datos...
-            </div>
-        </div>
+<div class="container">
+    <h1>¿A quién conoces?</h1>
+    <p>Elige la cámara que quieres poner a prueba y adivina el candidato.</p>
+    
+    <div class="menu-options">
+        <a href="quiz.html?chamber=senado" class="btn"><span class="senado">🏛️ Quiz de Senadores</span> (60)</a>
+        <a href="quiz.html?chamber=diputados" class="btn"><span class="diputados">👥 Quiz de Diputados</span> (130)</a>
+        <a href="quiz.html?chamber=todos" class="btn" style="font-size: 1.2em; padding: 15px;">Mezclar Todos (190)</a>
     </div>
 
-    <script>
-        let candidatos = [];
-        let butacaSeleccionada = null;
+    <div style="margin-top: 35px; color: #777; font-size: 0.95em; font-style: italic; letter-spacing: 0.5px;">
+        Creado por Maythe Vásquez
+    </div>
+</div>
 
-        // Cargar el JSON generado
-        fetch('candidatos.json')
-            .then(res => res.json())
-            .then(data => {
-                candidatos = data;
-                renderListaCandidatos();
-            })
-            .catch(err => {
-                document.getElementById('lista-candidatos').innerHTML = 'Error al cargar candidatos.json. Asegúrate de abrir este archivo en un servidor local (ej. Live Server).';
-                console.error(err);
-            });
-
-        // Generar 130 butacas
-        const butacasContainer = document.getElementById('butacas');
-        for (let i = 0; i < 130; i++) {
-            const butaca = document.createElement('div');
-            butaca.className = 'butaca';
-            butaca.dataset.index = i;
-            
-            const img = document.createElement('img');
-            butaca.appendChild(img);
-
-            butaca.addEventListener('click', () => {
-                // Deseleccionar anterior
-                if (butacaSeleccionada) {
-                    butacaSeleccionada.classList.remove('selected');
-                }
-                // Seleccionar actual
-                butacaSeleccionada = butaca;
-                butaca.classList.add('selected');
-            });
-            butacasContainer.appendChild(butaca);
-        }
-
-        function renderListaCandidatos() {
-            const lista = document.getElementById('lista-candidatos');
-            lista.innerHTML = '';
-            
-            candidatos.forEach(c => {
-                const item = document.createElement('div');
-                item.className = 'candidato-item';
-                
-                // Usamos la ruta local de la imagen descargada
-                item.innerHTML = `
-                    <img src="${c.localPhotoPath}" class="candidato-img" onerror="this.src='https://via.placeholder.com/50'">
-                    <div class="candidato-info">
-                        <div class="candidato-name">${c.name}</div>
-                        <div class="candidato-party">Partido: ${c.partyName || c.partyCode} | Votos: ${c.votes}</div>
-                    </div>
-                `;
-
-                // Al hacer clic en un candidato, lo asignamos a la butaca seleccionada
-                item.addEventListener('click', () => {
-                    if (!butacaSeleccionada) {
-                        alert('Primero selecciona una butaca en el hemiciclo.');
-                        return;
-                    }
-                    
-                    const img = butacaSeleccionada.querySelector('img');
-                    img.src = c.localPhotoPath;
-                    butacaSeleccionada.classList.add('occupied');
-                    butacaSeleccionada.title = c.name; // Tooltip con el nombre
-                });
-
-                lista.appendChild(item);
-            });
-        }
-    </script>
 </body>
 </html>
