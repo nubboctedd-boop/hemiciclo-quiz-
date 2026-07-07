@@ -11,7 +11,16 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-VWZ5Y1JWMT');
+      // Leer la URL para enviar el título correcto a Analytics inmediatamente
+      const params = new URLSearchParams(window.location.search);
+      const ch = params.get('chamber');
+      let pageTitle = 'Evaluación General';
+      if (ch === 'senado') pageTitle = 'Módulo: Senadores';
+      if (ch === 'diputados') pageTitle = 'Módulo: Diputados';
+
+      gtag('config', 'G-VWZ5Y1JWMT', {
+          'page_title': pageTitle
+      });
     </script>
     <style>
         body {
