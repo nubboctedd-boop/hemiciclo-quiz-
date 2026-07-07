@@ -158,25 +158,32 @@
     let score = 0;
     let total = 0;
 
-    // Obtener parametro de la URL
     const urlParams = new URLSearchParams(window.location.search);
     const chamberParam = urlParams.get('chamber');
+    const partyParam = urlParams.get('party');
 
     // Cargar datos
     fetch('candidatos.json?v=' + new Date().getTime())
         .then(res => res.json())
         .then(data => {
+            let filtered = data;
+            
+            // Filtro por cámara
             if (chamberParam === 'senado' || chamberParam === 'diputados') {
-                candidatos = data.filter(c => c.chamber === chamberParam);
+                filtered = filtered.filter(c => c.chamber === chamberParam);
                 const isSenado = chamberParam === 'senado';
                 const title = isSenado ? 'Senador' : 'Diputado';
                 document.querySelector('h1').textContent = `Identificación de ${title}`;
-                document.title = isSenado ? `Módulo: Senadores` : `Módulo: Diputados`;
             } else {
-                candidatos = data;
                 document.querySelector('h1').textContent = `Identificación de Candidato`;
-                document.title = `Evaluación General`;
             }
+            
+            // Filtro por partido
+            if (partyParam) {
+                filtered = filtered.filter(c => c.partyName === partyParam);
+            }
+            
+            candidatos = filtered;
             loadNextQuestion();
         })
         .catch(err => {
@@ -184,19 +191,31 @@
             console.error(err);
         });
 
-    function getRandomCandidates(count) {
-        const shuffled = [...candidatos].sort(() => 0.5 - Math.random());
-        return shuffled.slice(0, count);
-    }
-
     function loadNextQuestion() {
-        if(candidatos.length === 0) return;
+        if(candidatos.length === 0) {
+            document.querySelector('.options-container').innerHTML = '<p>No hay suficientes candidatos en esta selección.</p>';
+            return;
+        }
 
-        // Seleccionar 4 candidatos aleatorios
-        const roundCandidates = getRandomCandidates(4);
+        // Elegir al candidato correcto aleatoriamente
+        currentCandidate = candidatos[Math.floor(Math.random() * candidatos.length)];
         
-        // Elegir a uno como el correcto
-        currentCandidate = roundCandidates[Math.floor(Math.random() * roundCandidates.length)];
+        // Filtrar otros candidatos del MISMO GÉNERO
+        let sameGenderCandidates = candidatos.filter(c => c.gender === currentCandidate.gender && c.dni !== currentCandidate.dni);
+        
+        // Mezclar y tomar 3
+        sameGenderCandidates = sameGenderCandidates.sort(() => 0.5 - Math.random());
+        let roundOptions = [currentCandidate, ...sameGenderCandidates.slice(0, 3)];
+        
+        // Si no hay suficientes del mismo género, rellenar con cualquiera (por seguridad)
+        if (roundOptions.length < 4) {
+            let others = candidatos.filter(c => !roundOptions.includes(c));
+            others = others.sort(() => 0.5 - Math.random());
+            roundOptions = [...roundOptions, ...others.slice(0, 4 - roundOptions.length)];
+        }
+        
+        // Mezclar las 4 opciones finales
+        roundOptions = roundOptions.sort(() => 0.5 - Math.random());
 
         // Actualizar UI
         document.getElementById('candidate-photo').src = currentCandidate.localPhotoPath;
@@ -205,11 +224,10 @@
         const optionsContainer = document.getElementById('options');
         optionsContainer.innerHTML = '';
 
-        roundCandidates.forEach(cand => {
+        roundOptions.forEach(cand => {
             const btn = document.createElement('button');
             btn.className = 'option-btn';
             
-            // Si el distrito es "Distrito Nacional Único" podemos acortarlo
             let regionStr = cand.districtName === 'Distrito Nacional Único' ? 'Nacional' : cand.districtName;
             
             btn.innerHTML = `<strong>${cand.name}</strong><br><span style="font-size:0.85em; color:#777">${cand.partyName || cand.partyCode} &nbsp;•&nbsp; ${regionStr}</span>`;
@@ -219,7 +237,6 @@
     }
 
     function checkAnswer(selectedBtn, selectedCandidate) {
-        // Deshabilitar todos los botones temporalmente
         const buttons = document.querySelectorAll('.option-btn');
         buttons.forEach(btn => btn.disabled = true);
 
@@ -232,7 +249,6 @@
             document.getElementById('score-val').textContent = score;
         } else {
             selectedBtn.classList.add('wrong');
-            // Resaltar el correcto
             buttons.forEach(btn => {
                 if (btn.innerHTML.includes(currentCandidate.name)) {
                     btn.classList.add('correct');

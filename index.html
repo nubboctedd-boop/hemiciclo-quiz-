@@ -79,24 +79,61 @@
             color: #0056b3 !important;
             font-weight: 600;
         }
+        .form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        select {
+            width: 100%;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1.1em;
+            color: #333;
+            background-color: #f9f9f9;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
     <h1>Herramienta de Reconocimiento Parlamentario</h1>
-    <p>Sistema de entrenamiento visual para el equipo. Seleccione la cámara correspondiente para iniciar la sesión de identificación de candidatos al Congreso 2026.</p>
+    <p>Sistema de entrenamiento visual para el equipo. Seleccione la bancada y la cámara correspondiente para iniciar la sesión de identificación.</p>
     
+    <div class="form-group">
+        <label for="party-select" style="font-weight: 600; color: #003366; display: block; margin-bottom: 8px;">Filtrar por Bancada (Opcional):</label>
+        <select id="party-select">
+            <option value="todos">-- Todas las Bancadas --</option>
+            <option value="Ahora Nación (AN)">Ahora Nación (AN)</option>
+            <option value="Fuerza Popular (FP)">Fuerza Popular (FP)</option>
+            <option value="Juntos por el Perú (JP)">Juntos por el Perú (JP)</option>
+            <option value="Partido Cívico Obras (OBRAS)">Partido Cívico Obras (OBRAS)</option>
+            <option value="Partido del Buen Gobierno (BG)">Partido del Buen Gobierno (BG)</option>
+            <option value="Renovación Popular (RP)">Renovación Popular (RP)</option>
+        </select>
+    </div>
+
     <div class="menu-options">
-        <a href="quiz.html?chamber=senado" class="btn"><span class="senado">Módulo: Senado</span> (60 escaños)</a>
-        <a href="quiz.html?chamber=diputados" class="btn"><span class="diputados">Módulo: Diputados</span> (130 escaños)</a>
-        <a href="quiz.html?chamber=todos" class="btn" style="font-size: 1.1em; padding: 14px; color: #555;">Evaluación General (190 escaños)</a>
+        <a href="#" onclick="startQuiz('senado')" class="btn"><span class="senado">Módulo: Senado</span></a>
+        <a href="#" onclick="startQuiz('diputados')" class="btn"><span class="diputados">Módulo: Diputados</span></a>
+        <a href="#" onclick="startQuiz('todos')" class="btn" style="font-size: 1.1em; padding: 14px; color: #555;">Evaluación General</a>
     </div>
 
     <div style="margin-top: 40px; padding-top: 20px; color: #b0b0b0; font-size: 0.8em; font-weight: 400; text-align: center;">
         Creado por Maythe Vásquez Caro
     </div>
 </div>
+
+<script>
+    function startQuiz(chamber) {
+        const party = document.getElementById('party-select').value;
+        let url = `quiz.html?chamber=${chamber}`;
+        if (party !== 'todos') {
+            url += `&party=${encodeURIComponent(party)}`;
+        }
+        window.location.href = url;
+    }
+</script>
 
 </body>
 </html>

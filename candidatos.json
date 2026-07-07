@@ -11,7 +11,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/789b7714-8633-4a59-a89b-7fab4646fef1.jpeg",
         "localPhotoPath": "images/40433187.jpeg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "27409088",
@@ -25,7 +26,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/0e2b05c2-c95a-4599-bc78-56584d571b51.jpg",
         "localPhotoPath": "images/27409088.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "07845838",
@@ -39,7 +41,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/b2e00ae2-1e50-4ad3-a103-71fc7e4e8255.jpg",
         "localPhotoPath": "images/07845838.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "25331980",
@@ -53,7 +56,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/ddfa74eb-cae3-401c-a34c-35543ae83c57.jpg",
         "localPhotoPath": "images/25331980.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "45209282",
@@ -67,7 +71,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/bcf375ae-6a90-4f80-8ed3-37c2c43efbca.jpg",
         "localPhotoPath": "images/45209282.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "10063223",
@@ -81,7 +86,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/15595890-de24-4f14-b4f6-bd9b5e10372a.jpg",
         "localPhotoPath": "images/10063223.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "07793210",
@@ -95,7 +101,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/3e078903-65e7-4fe8-9c87-89be503223a7.jpg",
         "localPhotoPath": "images/07793210.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "25799622",
@@ -109,7 +116,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/6574b5ec-9453-4117-8f95-80cf0bcb4371.jpg",
         "localPhotoPath": "images/25799622.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "07231335",
@@ -123,7 +131,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/1596b93e-f1f1-44e5-a76c-386c100a888d.jpg",
         "localPhotoPath": "images/07231335.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "42750152",
@@ -137,7 +146,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/3339fe0c-6911-4144-85df-b4617bfb7ebe.jpg",
         "localPhotoPath": "images/42750152.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "07755878",
@@ -151,7 +161,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/9aee4b33-103e-4327-9038-3618515d950d.jpg",
         "localPhotoPath": "images/07755878.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "06876967",
@@ -165,7 +176,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/63c487f6-0e92-45ec-8d58-5fed3a35e368.jpg",
         "localPhotoPath": "images/06876967.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "43285320",
@@ -179,7 +191,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/552d520b-f83d-4e86-86c4-f55840c252be.jpg",
         "localPhotoPath": "images/43285320.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "08235876",
@@ -193,7 +206,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/0a50619c-a4b3-4580-bdee-146c75827d2c.jpg",
         "localPhotoPath": "images/08235876.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "07960843",
@@ -207,7 +221,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/b3b29de8-c5bd-4b73-b34b-29c48267363a.jpg",
         "localPhotoPath": "images/07960843.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "40204874",
@@ -221,7 +236,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/428c14a1-1be6-477e-b02a-f0dec2dc8e65.jpg",
         "localPhotoPath": "images/40204874.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "26705695",
@@ -235,7 +251,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/83aa4be4-54a0-4f96-874a-96ec34678843.jpg",
         "localPhotoPath": "images/26705695.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "22974228",
@@ -249,7 +266,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/8388c289-7fce-48e9-91f9-732565b127c7.jpg",
         "localPhotoPath": "images/22974228.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "29632775",
@@ -263,7 +281,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/dc4ba573-e19b-4a60-8485-52ebcd3d6d3a.jpg",
         "localPhotoPath": "images/29632775.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "06519219",
@@ -277,7 +296,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/f8a01e27-807f-4d43-a555-48f03cfe5baf.jpg",
         "localPhotoPath": "images/06519219.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "07250032",
@@ -291,7 +311,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/1c31e830-418b-4987-adc6-47f3007dd2bb.jpg",
         "localPhotoPath": "images/07250032.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "01539305",
@@ -305,7 +326,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/278ecb43-645b-460c-82f0-b310cbb72289.jpg",
         "localPhotoPath": "images/01539305.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "07852432",
@@ -319,7 +341,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/b0d9cd02-a849-4579-8091-2c6903eec61a.jpg",
         "localPhotoPath": "images/07852432.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "07704730",
@@ -333,7 +356,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/4e1024fa-a2ee-4b49-8563-7484061f3763.jpg",
         "localPhotoPath": "images/07704730.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "43360309",
@@ -347,7 +371,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/22e7b027-0df4-461c-8fd9-1bc297a95caf.jpg",
         "localPhotoPath": "images/43360309.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "21487528",
@@ -361,7 +386,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/1baf3ce6-bf7f-4f48-90af-7df69ba21d70.jpg",
         "localPhotoPath": "images/21487528.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "02044988",
@@ -375,7 +401,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/f1652846-0cf9-4d3e-8a6d-42195ec44981.jpg",
         "localPhotoPath": "images/02044988.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "07412350",
@@ -389,7 +416,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/7d624b9c-c411-46c2-9368-5f1280b8646b.jpg",
         "localPhotoPath": "images/07412350.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "07831436",
@@ -403,7 +431,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/1dc6fbdd-d970-4fa3-9195-cf0492bc11d2.jpg",
         "localPhotoPath": "images/07831436.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "21453924",
@@ -417,7 +446,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/9ff4f8d0-cff1-429b-b3b9-a2c9baf178cf.jpg",
         "localPhotoPath": "images/21453924.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "30762511",
@@ -431,7 +461,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/9d17d4fc-7d1c-4e45-96ab-4361c6fe286a.jpg",
         "localPhotoPath": "images/30762511.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "08911520",
@@ -445,7 +476,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/e1193269-c9d9-48c8-9ff2-4fa1317c49cf.jpg",
         "localPhotoPath": "images/08911520.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "10307948",
@@ -459,7 +491,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/e4aee02d-e85d-44f7-aaca-9eb286ee132f.jpg",
         "localPhotoPath": "images/10307948.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "08236035",
@@ -473,7 +506,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/ec0a8246-1b06-4e2b-8037-a71cfce09cf5.jpg",
         "localPhotoPath": "images/08236035.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "10638205",
@@ -487,7 +521,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/8484cd8e-5f0a-48d3-ba54-be7120b1107f.jpg",
         "localPhotoPath": "images/10638205.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "07619185",
@@ -501,7 +536,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/7348e9ca-1d86-470e-af99-1be833a166d3.jpg",
         "localPhotoPath": "images/07619185.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "23906812",
@@ -515,7 +551,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/f9434b58-54bc-4456-9354-653e00d90003.jpg",
         "localPhotoPath": "images/23906812.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "07651031",
@@ -529,7 +566,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/ca28ff0a-b929-4dae-87b6-d49dc63f75ac.jpg",
         "localPhotoPath": "images/07651031.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "23271450",
@@ -543,7 +581,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/41de7af1-2c31-4314-9afc-67ae339aa059.jpg",
         "localPhotoPath": "images/23271450.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "17896798",
@@ -557,7 +596,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/8022ae32-73db-492b-9442-9ab351cf4ac6.jpg",
         "localPhotoPath": "images/17896798.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "21143880",
@@ -571,7 +611,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/043cb739-9e01-4351-88d8-c0a5979b4884.jpg",
         "localPhotoPath": "images/21143880.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "31010129",
@@ -585,7 +626,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/3565d84a-87b7-44fc-a996-a39892919b33.jpg",
         "localPhotoPath": "images/31010129.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "10252335",
@@ -599,7 +641,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/58170e97-f6a2-4003-a111-f1ce55f0715a.jpg",
         "localPhotoPath": "images/10252335.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "08234063",
@@ -613,7 +656,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/04696b3b-471f-462a-b3c2-84726b866a6f.jpg",
         "localPhotoPath": "images/08234063.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "22482738",
@@ -627,7 +671,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/28f4e30f-f8c9-4a48-b698-94f4480bd3fe.jpg",
         "localPhotoPath": "images/22482738.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "19994639",
@@ -641,7 +686,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/2856fdf9-9f1e-4e3e-857e-0b998e066e36.jpg",
         "localPhotoPath": "images/19994639.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "08266314",
@@ -655,7 +701,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/8b5d10f4-a0ec-4744-b29f-59271274b78c.jpg",
         "localPhotoPath": "images/08266314.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "09884301",
@@ -669,7 +716,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/2d527059-8586-4a8d-9224-a08d4d3dc223.jpg",
         "localPhotoPath": "images/09884301.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "17806760",
@@ -683,7 +731,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/84f8ce01-b3ad-4d93-bbe2-79314b572334.jpg",
         "localPhotoPath": "images/17806760.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "32971154",
@@ -697,7 +746,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/133f5d7c-5498-4a5e-81e2-a7c2f3f53d0c.jpg",
         "localPhotoPath": "images/32971154.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "05227631",
@@ -711,7 +761,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/39addd4e-6c93-405b-9e93-56a0892eae72.jpg",
         "localPhotoPath": "images/05227631.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "21414172",
@@ -725,7 +776,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/54b17e85-5ae3-4825-85d3-be4a29802a84.jpg",
         "localPhotoPath": "images/21414172.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "16657841",
@@ -739,7 +791,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/09f4526f-7117-476b-9499-38179dd8ef02.jpg",
         "localPhotoPath": "images/16657841.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "06504611",
@@ -753,7 +806,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/f526053a-32bd-4f15-b314-92c9603db466.jpg",
         "localPhotoPath": "images/06504611.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "06717199",
@@ -767,7 +821,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/d70fc358-ff34-4dfb-99fc-2cdcbb77ff83.jpg",
         "localPhotoPath": "images/06717199.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "00422672",
@@ -781,7 +836,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/35cb22aa-fee5-4341-b50c-2eaac0ddbb13.jpg",
         "localPhotoPath": "images/00422672.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "F"
     },
     {
         "dni": "40938678",
@@ -795,7 +851,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/5feb176c-f41c-425c-b42c-70564c87a8ba.jpg",
         "localPhotoPath": "images/40938678.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "40242430",
@@ -809,7 +866,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/bcf4cec7-d78a-4d75-a07c-d6ecf3f9322e.jpg",
         "localPhotoPath": "images/40242430.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "40669342",
@@ -823,7 +881,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/ffc812a5-4689-4912-831a-cb0ab734f078.jpg",
         "localPhotoPath": "images/40669342.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "04647085",
@@ -837,7 +896,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/8a462ad7-557a-40c5-80af-4f87c81544ea.jpg",
         "localPhotoPath": "images/04647085.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "senado"
+        "chamber": "senado",
+        "gender": "M"
     },
     {
         "dni": "43592504",
@@ -851,7 +911,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/aaf42d15-51c4-42da-970a-27fc9722d258.jpg",
         "localPhotoPath": "images/43592504.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "10806296",
@@ -865,7 +926,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/90b8a957-0b76-41a0-b2a0-62ad6e328327.jpg",
         "localPhotoPath": "images/10806296.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "45218393",
@@ -879,7 +941,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/00a34212-f067-4014-be90-c9a48610b7d1.jpg",
         "localPhotoPath": "images/45218393.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "09536896",
@@ -893,7 +956,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/075f4d47-7bb6-4eea-a441-5e19b60f7b47.jpg",
         "localPhotoPath": "images/09536896.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "09937296",
@@ -907,7 +971,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/40d1c4f0-80ca-4308-9956-39825342cc72.jpg",
         "localPhotoPath": "images/09937296.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "74638299",
@@ -921,7 +986,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/df807ab2-353c-4d89-8246-1a2b5c04ee5b.jpg",
         "localPhotoPath": "images/74638299.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "10275564",
@@ -935,7 +1001,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/86b38aa1-2f58-4a5f-b0f9-4a7d8368659b.jpg",
         "localPhotoPath": "images/10275564.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "43348625",
@@ -949,7 +1016,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/bf8f66d1-eceb-4872-b784-b17b419d8f33.jpg",
         "localPhotoPath": "images/43348625.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "07744156",
@@ -963,7 +1031,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/5c003520-8824-4be8-958c-b1df3c8f9a6b.jpg",
         "localPhotoPath": "images/07744156.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "41010370",
@@ -977,7 +1046,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/e1aea3a3-5ab0-43e8-b91b-052215702d28.jpg",
         "localPhotoPath": "images/41010370.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "70665764",
@@ -991,7 +1061,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/7fadb198-1995-459d-b2bb-8111575467a4.jpg",
         "localPhotoPath": "images/70665764.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "46548697",
@@ -1005,7 +1076,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/45d1c562-f232-4b64-bc2c-6c8c0f0ba33a.jpg",
         "localPhotoPath": "images/46548697.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "40826681",
@@ -1019,7 +1091,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/e393717b-8477-43d8-a7a9-f3ce8f09395a.jpg",
         "localPhotoPath": "images/40826681.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "76871362",
@@ -1033,7 +1106,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/85df76a1-f01a-4e24-8b72-a80dadb1ee0a.jpg",
         "localPhotoPath": "images/76871362.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "40067839",
@@ -1047,7 +1121,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/93bd1fb5-a0ee-4900-b08b-36a0071a8d02.jpg",
         "localPhotoPath": "images/40067839.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "76030152",
@@ -1061,7 +1136,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/fe41e940-1222-4497-b86f-66bedd7a031d.jpg",
         "localPhotoPath": "images/76030152.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "31038213",
@@ -1075,7 +1151,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/4e96cee3-276f-4dd5-87fb-be716ede1954.jpg",
         "localPhotoPath": "images/31038213.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "45721573",
@@ -1089,7 +1166,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/f1ccbd31-2838-4168-82d3-eb5b71f519c7.jpg",
         "localPhotoPath": "images/45721573.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "43572794",
@@ -1103,7 +1181,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/20080e01-d77e-4a41-8a34-5e3a55ac4b10.jpg",
         "localPhotoPath": "images/43572794.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "45363882",
@@ -1117,7 +1196,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/cb2c329e-da2f-4c05-8cbe-86dc48f97529.jpg",
         "localPhotoPath": "images/45363882.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "43401219",
@@ -1131,7 +1211,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/3c15f97e-30d2-4d67-9170-3e68af9281ce.jpg",
         "localPhotoPath": "images/43401219.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "40093361",
@@ -1145,7 +1226,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/098935bc-8d8f-4d90-9ab1-209d38292773.jpg",
         "localPhotoPath": "images/40093361.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "40855980",
@@ -1159,7 +1241,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/5dd5ffdf-a410-49e0-bc70-47b88e90f596.jpg",
         "localPhotoPath": "images/40855980.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "10702554",
@@ -1173,7 +1256,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/6e32cc34-8b80-44b7-83a6-6e1697eb0e9b.jpg",
         "localPhotoPath": "images/10702554.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "29715400",
@@ -1187,7 +1271,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/f17364a8-2519-4d38-8f99-bd6c610c1ae7.jpg",
         "localPhotoPath": "images/29715400.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "44908591",
@@ -1201,7 +1286,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/8451ecf0-0f0b-4f4c-959e-41a197c80793.jpg",
         "localPhotoPath": "images/44908591.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "07793641",
@@ -1215,7 +1301,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/f86a4159-4ef5-4159-99a3-e7ad0f662dea.jpg",
         "localPhotoPath": "images/07793641.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "01320941",
@@ -1229,7 +1316,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/89ae261a-857b-4969-bad7-55e0ad4efdee.jpg",
         "localPhotoPath": "images/01320941.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "44275599",
@@ -1243,7 +1331,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/c239bb01-32d8-47ae-ac26-e62459fe1f18.jpg",
         "localPhotoPath": "images/44275599.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "42839004",
@@ -1257,7 +1346,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/c0fc0177-68d3-47cf-a9f4-7a0b0edf6c9b.jpg",
         "localPhotoPath": "images/42839004.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "45442927",
@@ -1271,7 +1361,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/cd236409-a6a7-4b75-8b06-25db73f256bd.jpg",
         "localPhotoPath": "images/45442927.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "07268767",
@@ -1285,7 +1376,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/ac01f508-6d64-4ea5-b2ff-42a47fe0d259.jpg",
         "localPhotoPath": "images/07268767.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "44807108",
@@ -1299,7 +1391,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/d96b162f-db71-4892-ac4e-829de3492e9d.jpg",
         "localPhotoPath": "images/44807108.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "01223056",
@@ -1313,7 +1406,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/01517b31-d1ad-46ae-8e61-04d93a3e9c53.jpg",
         "localPhotoPath": "images/01223056.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "70747151",
@@ -1327,7 +1421,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/d70f438b-eda1-464c-8674-72cac0bacde7.jpg",
         "localPhotoPath": "images/70747151.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "29569533",
@@ -1341,7 +1436,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/1d29caa5-9573-43f8-b661-c8bcdcb459d0.jpeg",
         "localPhotoPath": "images/29569533.jpeg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "70074678",
@@ -1355,7 +1451,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/af203abd-b7ad-4309-93b0-d86172a4f4e6.jpg",
         "localPhotoPath": "images/70074678.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "45043739",
@@ -1369,7 +1466,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/c9600e81-d037-462b-be35-5bcd3f645e82.jpg",
         "localPhotoPath": "images/45043739.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "20595160",
@@ -1383,7 +1481,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/86696a31-4c4c-444c-9557-8c9aec5168f3.jpg",
         "localPhotoPath": "images/20595160.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "46307918",
@@ -1397,7 +1496,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/51e0f0d8-3b5a-4ca2-b969-bc892642c00e.jpg",
         "localPhotoPath": "images/46307918.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "10536312",
@@ -1411,7 +1511,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/0fb84197-9795-40fb-98ae-0445dd6de6a6.jpg",
         "localPhotoPath": "images/10536312.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "47000483",
@@ -1425,7 +1526,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/eeab968c-83e6-41a2-92ec-4dfdcdb0cd7f.jpg",
         "localPhotoPath": "images/47000483.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "41356710",
@@ -1439,7 +1541,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/79cec618-7fb8-406a-bb30-481e575dd8aa.jpg",
         "localPhotoPath": "images/41356710.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "43478989",
@@ -1453,7 +1556,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/c0aa7fd0-a9f9-4350-925f-0182ae996c3f.jpg",
         "localPhotoPath": "images/43478989.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "08571708",
@@ -1467,7 +1571,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/4a6db76e-4a02-49f7-8d84-0ad1b851903f.jpg",
         "localPhotoPath": "images/08571708.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "46847115",
@@ -1481,7 +1586,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/bff26ae0-3fe2-4ed8-9782-3b6450bdd88f.jpg",
         "localPhotoPath": "images/46847115.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "48689735",
@@ -1495,7 +1601,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/516faf29-beae-4b88-af40-c65332984bac.jpg",
         "localPhotoPath": "images/48689735.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "01545223",
@@ -1509,7 +1616,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/fa703877-427f-4312-be04-95b2959bf6d3.jpg",
         "localPhotoPath": "images/01545223.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "08878867",
@@ -1523,7 +1631,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/1f3cf0a8-3e7e-4509-9b05-821faca27afa.jpg",
         "localPhotoPath": "images/08878867.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "44560484",
@@ -1537,7 +1646,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/bd707521-63dc-4f77-87e8-fab441d49d0b.jpg",
         "localPhotoPath": "images/44560484.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "29313850",
@@ -1551,7 +1661,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/d05dfeb1-ce90-451c-b614-e00ac68e1077.jpg",
         "localPhotoPath": "images/29313850.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "42433830",
@@ -1565,7 +1676,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/38b21551-9f9d-4509-8df3-3ff196a3db73.jpg",
         "localPhotoPath": "images/42433830.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "75421660",
@@ -1579,7 +1691,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/46a83e81-cd82-4890-acbc-e4362e7fb870.jpg",
         "localPhotoPath": "images/75421660.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "07974594",
@@ -1593,7 +1706,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/eb0f38dd-1396-4901-94e7-b32e9c61a978.jpg",
         "localPhotoPath": "images/07974594.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "07737110",
@@ -1607,7 +1721,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/922d4c25-0617-4447-97d6-8eaf47e4fbf2.jpg",
         "localPhotoPath": "images/07737110.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "42516751",
@@ -1621,7 +1736,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/799ae78c-4935-458a-aa5c-550ceb4dadf4.jpg",
         "localPhotoPath": "images/42516751.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "46432487",
@@ -1635,7 +1751,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/3cbab5a1-07f1-4378-9838-4d07f4cf0e6f.jpg",
         "localPhotoPath": "images/46432487.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "45327535",
@@ -1649,7 +1766,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/41bd9e58-4784-4073-9233-aaec6337b136.jpg",
         "localPhotoPath": "images/45327535.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "10792277",
@@ -1663,7 +1781,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/1351a920-31c9-42b8-9abc-e65fa1a12dd8.jpg",
         "localPhotoPath": "images/10792277.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "29311981",
@@ -1677,7 +1796,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/b0b0414c-e256-403d-a125-f0a5634e8d31.jpg",
         "localPhotoPath": "images/29311981.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "42578522",
@@ -1691,7 +1811,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/48ded5a8-88ea-474a-a113-b88b0f20d757.jpg",
         "localPhotoPath": "images/42578522.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "10028427",
@@ -1705,7 +1826,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/0c036c3c-b21f-4a3c-9aa0-355dc67b9d55.jpg",
         "localPhotoPath": "images/10028427.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "41618961",
@@ -1719,7 +1841,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/54087930-f4c1-4c30-a5ff-c168e7cec980.jpg",
         "localPhotoPath": "images/41618961.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "41242025",
@@ -1733,7 +1856,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/1b6eafdb-2ae0-4e95-ac50-503069a4bae3.jpg",
         "localPhotoPath": "images/41242025.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "15984771",
@@ -1747,7 +1871,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/2d022f8e-70ca-4f69-bb66-18caf80c35d1.jpg",
         "localPhotoPath": "images/15984771.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "41678124",
@@ -1761,7 +1886,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/54a54717-bc91-42f3-be05-6c8b72aa7000.jpg",
         "localPhotoPath": "images/41678124.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "16787889",
@@ -1775,7 +1901,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/78074ff5-6c21-401f-b18c-66c503ea8eef.jpg",
         "localPhotoPath": "images/16787889.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "46089177",
@@ -1789,7 +1916,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/ce2ebf06-2e90-407f-9981-803107fe0975.jpg",
         "localPhotoPath": "images/46089177.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "42135939",
@@ -1803,7 +1931,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/46944cd6-4aac-4b6c-9884-64ea79bb4e44.jpg",
         "localPhotoPath": "images/42135939.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "43845728",
@@ -1817,7 +1946,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/2efb6771-bcb3-4714-b266-fd7c6f05ec2c.jpg",
         "localPhotoPath": "images/43845728.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "25001331",
@@ -1831,7 +1961,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/142c9ff3-0883-48d4-8fe4-786719c05e9f.jpg",
         "localPhotoPath": "images/25001331.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "06296745",
@@ -1845,7 +1976,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/77d2ff11-97f6-4d87-966b-2206b6073627.jpg",
         "localPhotoPath": "images/06296745.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "45382589",
@@ -1859,7 +1991,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/0210df51-6f47-4b87-816a-bd7246ac72b9.jpg",
         "localPhotoPath": "images/45382589.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "16650849",
@@ -1873,7 +2006,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/1f66acdf-101e-4b1c-8468-4def175df0f8.jpg",
         "localPhotoPath": "images/16650849.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "16629849",
@@ -1887,7 +2021,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/31d49098-516e-4c03-8a17-a7b02572d1c1.jpg",
         "localPhotoPath": "images/16629849.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "72393802",
@@ -1901,7 +2036,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/586449c1-f4dc-4b52-a737-95dc3c54de8e.jpg",
         "localPhotoPath": "images/72393802.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "19845556",
@@ -1915,7 +2051,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/bf8c1856-a2d9-4e34-868e-e4619985c8d6.jpg",
         "localPhotoPath": "images/19845556.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "43403563",
@@ -1929,7 +2066,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/af149fdc-e8ae-4696-9f6c-7ce8751bab93.jpg",
         "localPhotoPath": "images/43403563.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "23266182",
@@ -1943,7 +2081,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/7cc235a1-5b8d-45cc-b88a-03163d1ed02c.jpg",
         "localPhotoPath": "images/23266182.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "80387180",
@@ -1957,7 +2096,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/3684bf3c-4385-430d-bd6e-9d0ac59d4f92.jpg",
         "localPhotoPath": "images/80387180.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "44689086",
@@ -1971,7 +2111,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/36da1705-188b-41bc-98e4-1c18c05612d5.jpg",
         "localPhotoPath": "images/44689086.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "19995860",
@@ -1985,7 +2126,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/218682eb-a4f1-400c-b05d-637a881181e2.jpg",
         "localPhotoPath": "images/19995860.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "10277219",
@@ -1999,7 +2141,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/96e1f352-3fca-4573-8959-94b731cb2082.jpg",
         "localPhotoPath": "images/10277219.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "27424381",
@@ -2013,7 +2156,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/ea749409-747d-429b-a6ea-fabdb2095247.jpg",
         "localPhotoPath": "images/27424381.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "31012880",
@@ -2027,7 +2171,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/d300cdb9-f0c2-4ff7-9b3f-29a91d93da2f.jpg",
         "localPhotoPath": "images/31012880.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "22509175",
@@ -2041,7 +2186,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/43176a37-cb6a-4724-be25-93f8b8855a1b.jpg",
         "localPhotoPath": "images/22509175.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "08573694",
@@ -2055,7 +2201,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/a03eee72-dcb6-4ae2-9b09-f203c0289b9c.jpg",
         "localPhotoPath": "images/08573694.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "41408779",
@@ -2069,7 +2216,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/acf9364c-20ca-403e-bf77-0252c913b060.jpg",
         "localPhotoPath": "images/41408779.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "41840094",
@@ -2083,7 +2231,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/51e57b53-4a9b-411f-b2ba-0b25bfb8aa68.jpg",
         "localPhotoPath": "images/41840094.jpg",
         "partyName": "Ahora Nación (AN)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "70163475",
@@ -2097,7 +2246,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/c2d9848e-35f1-4b7c-bac2-15ea99360217.jpg",
         "localPhotoPath": "images/70163475.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "07026029",
@@ -2111,7 +2261,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/cce9abf6-a68e-4e2c-b169-6eab12571da6.jpg",
         "localPhotoPath": "images/07026029.jpg",
         "partyName": "Renovación Popular (RP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "41919665",
@@ -2125,7 +2276,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/b00ba9d7-66c7-480f-b8ea-b46904b30968.jpg",
         "localPhotoPath": "images/41919665.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "17930730",
@@ -2139,7 +2291,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/ab981458-cca9-4216-891a-c01371fa4609.jpg",
         "localPhotoPath": "images/17930730.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "45353055",
@@ -2153,7 +2306,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/aa7af1da-17a5-4fff-a730-27fd3322ee1f.jpg",
         "localPhotoPath": "images/45353055.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "42188288",
@@ -2167,7 +2321,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/b4199bc6-2a02-456e-ba65-3d397f8acb9d.jpg",
         "localPhotoPath": "images/42188288.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "40224994",
@@ -2181,7 +2336,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/4aa19ef9-46f1-4ff4-a11f-55fa2b686023.jpg",
         "localPhotoPath": "images/40224994.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "80328889",
@@ -2195,7 +2351,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/2595a793-7375-4430-91d4-9cbc362c884d.jpg",
         "localPhotoPath": "images/80328889.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "03651034",
@@ -2209,7 +2366,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/73c88a2f-91d7-4869-be2f-e4b1661aaa26.jpg",
         "localPhotoPath": "images/03651034.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "05414308",
@@ -2223,7 +2381,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/b177f705-dfd3-4599-a882-ab395bc5346f.jpg",
         "localPhotoPath": "images/05414308.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "43170121",
@@ -2237,7 +2396,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/61529942-8bb4-407c-bc9c-3eb6a34537e6.jpg",
         "localPhotoPath": "images/43170121.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "02819812",
@@ -2251,7 +2411,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/d2f6880b-86eb-4e5e-a1a3-3474f35e6b0d.jpg",
         "localPhotoPath": "images/02819812.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "10587515",
@@ -2265,7 +2426,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/15b719e1-4b47-4b44-90b3-e7e90d7c9842.jpg",
         "localPhotoPath": "images/10587515.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "46602828",
@@ -2279,7 +2441,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/0db1fcfb-c302-445c-afe1-510fe4bf1f1a.jpg",
         "localPhotoPath": "images/46602828.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "42551310",
@@ -2293,7 +2456,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/46ef4d66-b8bf-48b4-aba1-ec2073b8ccf2.jpg",
         "localPhotoPath": "images/42551310.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "42667604",
@@ -2307,7 +2471,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/b98a95dc-037e-477e-b1e8-3bea736a16fb.jpg",
         "localPhotoPath": "images/42667604.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "07654582",
@@ -2321,7 +2486,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/8d44f945-0c51-4f46-a3e4-44206775973e.jpg",
         "localPhotoPath": "images/07654582.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "45792658",
@@ -2335,7 +2501,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/095e04c3-88dc-4ef4-b2cc-9802ae1635e2.jpg",
         "localPhotoPath": "images/45792658.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "18196788",
@@ -2349,7 +2516,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/33ed0fb7-e347-446f-968d-7a225a29ad63.jpg",
         "localPhotoPath": "images/18196788.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "00482691",
@@ -2363,7 +2531,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/424b0a36-b6b3-4320-9e23-b9875d7fcb48.jpg",
         "localPhotoPath": "images/00482691.jpg",
         "partyName": "Partido Cívico Obras (OBRAS)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "41400923",
@@ -2377,7 +2546,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/9c3eb238-fb36-4ca4-b6bf-f9d32bd62aaa.jpg",
         "localPhotoPath": "images/41400923.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "40340841",
@@ -2391,7 +2561,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/10a527f7-502b-42c7-aa1a-2df103db91bd.jpg",
         "localPhotoPath": "images/40340841.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "44106846",
@@ -2405,7 +2576,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/118b911d-4431-4815-8ae0-fc14245c6e07.jpg",
         "localPhotoPath": "images/44106846.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "45741388",
@@ -2419,7 +2591,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/63bf2e32-eea7-4bc0-b6d0-2ab775ee4843.jpg",
         "localPhotoPath": "images/45741388.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "41711513",
@@ -2433,7 +2606,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/6870c7f2-a2f8-4370-8dbe-ea07d50b8091.jpg",
         "localPhotoPath": "images/41711513.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "09391698",
@@ -2447,7 +2621,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/51fc230d-44ff-4a36-81fd-cdc866d39ffb.jpg",
         "localPhotoPath": "images/09391698.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "15750425",
@@ -2461,7 +2636,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/7eab2b4e-0515-40f0-8c20-e163c737a474.jpg",
         "localPhotoPath": "images/15750425.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "40775741",
@@ -2475,7 +2651,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/7967372c-32fe-472e-b065-2093eae48ffd.jpg",
         "localPhotoPath": "images/40775741.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "07750373",
@@ -2489,7 +2666,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/48700055-eec9-404e-a7ab-37cb70abb653.jpg",
         "localPhotoPath": "images/07750373.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "00106838",
@@ -2503,7 +2681,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/ee34613d-f503-4301-b94e-83ab87d3ee62.jpg",
         "localPhotoPath": "images/00106838.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "05206203",
@@ -2517,7 +2696,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/4558595a-e002-46be-863b-9432720ab6da.jpg",
         "localPhotoPath": "images/05206203.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "04810886",
@@ -2531,7 +2711,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/4234b8c6-6700-4d18-8bc3-3977077d52dc.jpg",
         "localPhotoPath": "images/04810886.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "47654459",
@@ -2545,7 +2726,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/5a1d94bc-3050-4a0b-a6e5-35f757b6a559.jpg",
         "localPhotoPath": "images/47654459.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "10187011",
@@ -2559,7 +2741,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/8543846b-eaab-4b44-bda0-849122e6f396.jpg",
         "localPhotoPath": "images/10187011.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "28303446",
@@ -2573,7 +2756,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/d3c00f9f-9a53-43a5-ba98-297f58e2a46f.jpg",
         "localPhotoPath": "images/28303446.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "45892017",
@@ -2587,7 +2771,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/651cd942-bb2b-4780-bb72-33a9c669747b.jpg",
         "localPhotoPath": "images/45892017.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "42984568",
@@ -2601,7 +2786,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/43965a86-c97c-44b8-a5e7-00376bc2c77b.jpg",
         "localPhotoPath": "images/42984568.jpg",
         "partyName": "Juntos por el Perú (JP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "04647591",
@@ -2615,7 +2801,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/acb6d8ba-0d30-48da-8ca6-e5f3f68f8a62.jpg",
         "localPhotoPath": "images/04647591.jpg",
         "partyName": "Partido del Buen Gobierno (BG)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "16448130",
@@ -2629,7 +2816,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/1c7cad1e-55d0-4eaf-a410-3190cc45ccd9.jpg",
         "localPhotoPath": "images/16448130.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "M"
     },
     {
         "dni": "29402006",
@@ -2643,7 +2831,8 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/59fdd782-02a4-4a82-8acf-988ba55a906b.jpg",
         "localPhotoPath": "images/29402006.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     },
     {
         "dni": "05275038",
@@ -2657,6 +2846,7 @@
         "photoUrl": "https://mpesije.jne.gob.pe/apidocs/5cbef410-c0d3-4585-ace5-2ad6b1833658.jpg",
         "localPhotoPath": "images/05275038.jpg",
         "partyName": "Fuerza Popular (FP)",
-        "chamber": "diputados"
+        "chamber": "diputados",
+        "gender": "F"
     }
 ]
