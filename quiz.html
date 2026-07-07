@@ -15,13 +15,18 @@
       const params = new URLSearchParams(window.location.search);
       const ch = params.get('chamber');
       const p = params.get('party');
+      const mode = params.get('mode');
       
       let pageTitle = 'Evaluación General';
-      if (ch === 'senado') pageTitle = 'Módulo: Senadores';
-      if (ch === 'diputados') pageTitle = 'Módulo: Diputados';
-      
-      if (p) {
-          pageTitle += ' (' + p + ')';
+      if (mode === 'revancha') {
+          pageTitle = 'Modo Revancha';
+      } else {
+          if (ch === 'senado') pageTitle = 'Módulo: Senadores';
+          if (ch === 'diputados') pageTitle = 'Módulo: Diputados';
+          
+          if (p) {
+              pageTitle += ' (' + p + ')';
+          }
       }
 
       gtag('config', 'G-VWZ5Y1JWMT', {
@@ -167,6 +172,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const chamberParam = urlParams.get('chamber');
     const partyParam = urlParams.get('party');
+    const modeParam = urlParams.get('mode');
 
     // Cargar datos
     fetch('candidatos.json?v=' + new Date().getTime())
@@ -174,19 +180,32 @@
         .then(data => {
             let filtered = data;
             
-            // Filtro por cámara
-            if (chamberParam === 'senado' || chamberParam === 'diputados') {
-                filtered = filtered.filter(c => c.chamber === chamberParam);
-                const isSenado = chamberParam === 'senado';
-                const title = isSenado ? 'Senador' : 'Diputado';
-                document.querySelector('h1').textContent = `Identificación de ${title}`;
+            if (modeParam === 'revancha') {
+                const errores = JSON.parse(localStorage.getItem('hemiciclo_errores') || '[]');
+                filtered = data.filter(c => errores.includes(c.dni));
+                
+                document.querySelector('h1').textContent = `Modo Revancha`;
+                document.title = `Modo Revancha`;
+                
+                if (filtered.length === 0) {
+                    document.querySelector('.options-container').innerHTML = '<p>¡Felicidades! Ya repasaste todos tus errores. <a href="index.html">Volver al menú</a></p>';
+                    return;
+                }
             } else {
-                document.querySelector('h1').textContent = `Identificación de Candidato`;
-            }
-            
-            // Filtro por partido
-            if (partyParam) {
-                filtered = filtered.filter(c => c.partyName === partyParam);
+                // Filtro por cámara
+                if (chamberParam === 'senado' || chamberParam === 'diputados') {
+                    filtered = filtered.filter(c => c.chamber === chamberParam);
+                    const isSenado = chamberParam === 'senado';
+                    const title = isSenado ? 'Senador' : 'Diputado';
+                    document.querySelector('h1').textContent = `Identificación de ${title}`;
+                } else {
+                    document.querySelector('h1').textContent = `Identificación de Candidato`;
+                }
+                
+                // Filtro por partido
+                if (partyParam) {
+                    filtered = filtered.filter(c => c.partyName === partyParam);
+                }
             }
             
             candidatos = filtered;
@@ -248,11 +267,18 @@
 
         total++;
         document.getElementById('total-val').textContent = total;
+        
+        let errores = JSON.parse(localStorage.getItem('hemiciclo_errores') || '[]');
 
         if (selectedCandidate.dni === currentCandidate.dni) {
             selectedBtn.classList.add('correct');
             score++;
             document.getElementById('score-val').textContent = score;
+            
+            // Si contesta bien, quitar de errores
+            errores = errores.filter(dni => dni !== currentCandidate.dni);
+            localStorage.setItem('hemiciclo_errores', JSON.stringify(errores));
+            
         } else {
             selectedBtn.classList.add('wrong');
             buttons.forEach(btn => {
@@ -260,9 +286,24 @@
                     btn.classList.add('correct');
                 }
             });
+            
+            // Si contesta mal, añadir a errores
+            if (!errores.includes(currentCandidate.dni)) {
+                errores.push(currentCandidate.dni);
+                localStorage.setItem('hemiciclo_errores', JSON.stringify(errores));
+            }
         }
 
-        document.getElementById('next-btn').style.display = 'inline-block';
+        // Si estamos en revancha y ya no hay errores, mostrar mensaje en vez de botón "Siguiente"
+        if (modeParam === 'revancha' && errores.length === 0) {
+            const nextBtn = document.getElementById('next-btn');
+            nextBtn.textContent = '¡Terminaste! Volver al menú';
+            nextBtn.onclick = () => window.location.href = 'index.html';
+            nextBtn.style.display = 'inline-block';
+            nextBtn.style.backgroundColor = '#4CAF50';
+        } else {
+            document.getElementById('next-btn').style.display = 'inline-block';
+        }
     }
 </script>
 

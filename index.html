@@ -117,6 +117,9 @@
         <a href="#" onclick="startQuiz('senado')" class="btn"><span class="senado">Módulo: Senado</span></a>
         <a href="#" onclick="startQuiz('diputados')" class="btn"><span class="diputados">Módulo: Diputados</span></a>
         <a href="#" onclick="startQuiz('todos')" class="btn" style="font-size: 1.1em; padding: 14px; color: #555;">Evaluación General</a>
+        
+        <!-- Botón de Modo Revancha (Aparece solo si hay errores) -->
+        <a href="#" id="btn-revancha" onclick="startRevancha()" class="btn" style="display: none; background-color: #ff9800; color: white; border: none; font-size: 1.1em; padding: 14px; margin-top: 15px;">🔄 Repasar mis Errores</a>
     </div>
 
     <div style="margin-top: 40px; padding-top: 20px; color: #b0b0b0; font-size: 0.8em; font-weight: 400; text-align: center;">
@@ -125,6 +128,16 @@
 </div>
 
 <script>
+    // Verificar si hay errores guardados al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+        const errores = JSON.parse(localStorage.getItem('hemiciclo_errores') || '[]');
+        if (errores.length > 0) {
+            const btn = document.getElementById('btn-revancha');
+            btn.style.display = 'block';
+            btn.innerHTML = `🔄 Repasar mis Errores (${errores.length} por aprender)`;
+        }
+    });
+
     function startQuiz(chamber) {
         const party = document.getElementById('party-select').value;
         let url = `quiz.html?chamber=${chamber}`;
@@ -132,6 +145,10 @@
             url += `&party=${encodeURIComponent(party)}`;
         }
         window.location.href = url;
+    }
+
+    function startRevancha() {
+        window.location.href = `quiz.html?mode=revancha`;
     }
 </script>
 
