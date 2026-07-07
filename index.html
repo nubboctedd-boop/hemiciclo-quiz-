@@ -30,7 +30,7 @@
             justify-content: center;
         }
         .bg-grid {
-            position: absolute;
+            position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
@@ -46,7 +46,7 @@
             filter: grayscale(100%);
         }
         .overlay {
-            position: absolute;
+            position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             background-color: rgba(0, 51, 102, 0.85); /* Azul institucional con transparencia */
             z-index: -1;
@@ -176,11 +176,17 @@
                 const grid = document.getElementById('bg-grid');
                 // Mezclamos al azar
                 const shuffled = data.sort(() => 0.5 - Math.random());
-                // Calculamos cuántos entran aprox o cargamos un límite (ej. 150)
-                const limit = Math.min(shuffled.length, 150);
-                for(let i = 0; i < limit; i++) {
+                
+                // Repetimos el arreglo para asegurar que llene pantallas de PC grandes
+                let pool = [];
+                while(pool.length < 500) {
+                    pool = pool.concat(shuffled);
+                }
+
+                // Generamos 500 imágenes para cubrir cualquier resolución
+                for(let i = 0; i < 500; i++) {
                     const img = document.createElement('img');
-                    img.src = shuffled[i].localPhotoPath;
+                    img.src = pool[i].localPhotoPath;
                     grid.appendChild(img);
                 }
             })
