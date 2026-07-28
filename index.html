@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>Quiz Congreso 2026</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWZ5Y1JWMT"></script>
@@ -186,7 +189,7 @@
                 // Generamos 500 imágenes para cubrir cualquier resolución
                 for(let i = 0; i < 500; i++) {
                     const img = document.createElement('img');
-                    img.src = pool[i].localPhotoPath;
+                    img.src = pool[i].localPhotoPath + '?v=' + new Date().getTime();
                     grid.appendChild(img);
                 }
             })
