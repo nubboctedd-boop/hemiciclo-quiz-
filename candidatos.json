@@ -30,16 +30,16 @@
         "gender": "M"
     },
     {
-        "dni": "07845838",
-        "name": "Rafael Bernardo López Aliaga Cazorla",
+        "dni": "09376064",
+        "name": "Absalón Vásquez Villanueva",
         "partyCode": 22,
         "mode": "nacional",
         "districtName": "Distrito Nacional Único",
         "listNumber": 1,
-        "votes": 255754,
+        "votes": 79053,
         "candidateId": 98,
-        "photoUrl": "https://mpesije.jne.gob.pe/apidocs/b2e00ae2-1e50-4ad3-a103-71fc7e4e8255.jpg",
-        "localPhotoPath": "images/07845838.jpg",
+        "photoUrl": "https://senado.congreso.gob.pe/wp-content/uploads/2026/07/Vasquez-Absalon.png",
+        "localPhotoPath": "images/09376064.png",
         "partyName": "Renovación Popular (RP)",
         "chamber": "senado",
         "gender": "M"
