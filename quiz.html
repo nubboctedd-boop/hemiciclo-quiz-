@@ -52,13 +52,14 @@
         }
         .quiz-container {
             background-color: #ffffff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            max-width: 550px;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+            max-width: 680px;
             width: 100%;
             text-align: center;
             border-top: 6px solid #003366;
+            margin: 20px auto;
         }
         h1 {
             color: #003366;
@@ -72,21 +73,132 @@
             color: #555555;
             font-weight: 500;
         }
+        
+        /* Contenedor Showcase: Foto + Comisiones */
+        .showcase-container {
+            display: flex;
+            gap: 20px;
+            align-items: stretch;
+            margin: 0 auto 25px;
+            max-width: 600px;
+        }
         .photo-container {
-            width: 220px;
-            height: 220px;
-            margin: 0 auto 30px;
+            width: 190px;
+            height: 190px;
+            min-width: 190px;
             border-radius: 8px;
             overflow: hidden;
-            border: 1px solid #ddd;
+            border: 1px solid #d1d5db;
             background-color: #f9f9f9;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .photo-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+        .comisiones-container {
+            flex: 1;
+            min-width: 220px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px 14px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+        .comisiones-header {
+            font-size: 12px;
+            font-weight: 700;
+            color: #1e293b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .comisiones-header span.badge-num {
+            background: #003366;
+            color: white;
+            padding: 1px 6px;
+            border-radius: 10px;
+            font-size: 10px;
+        }
+        .comisiones-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            overflow-y: auto;
+            max-height: 140px;
+            padding-right: 4px;
+        }
+        .comisiones-list::-webkit-scrollbar {
+            width: 5px;
+        }
+        .comisiones-list::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .comision-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+            font-size: 12px;
+            line-height: 1.35;
+            color: #334155;
+            padding: 3px 0;
+            border-bottom: 1px dashed #f1f5f9;
+        }
+        .comision-item:last-child {
+            border-bottom: none;
+        }
+        .cargo-badge {
+            font-size: 10.5px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            white-space: nowrap;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+        .cargo-presidente { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+        .cargo-vice { background: #e0e7ff; color: #4338ca; border: 1px solid #c7d2fe; }
+        .cargo-secretario { background: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
+        .cargo-titular { background: #e2e8f0; color: #334155; }
+        .cargo-suplente { background: #f1f5f9; color: #64748b; }
+        .comision-name {
+            flex: 1;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 620px) {
+            .quiz-container {
+                padding: 25px 20px;
+            }
+            .showcase-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            .photo-container {
+                width: 170px;
+                height: 170px;
+                min-width: 170px;
+            }
+            .comisiones-container {
+                width: 100%;
+                max-height: 160px;
+            }
+        }
+        
         .options-container {
             display: flex;
             flex-direction: column;
@@ -158,8 +270,20 @@
     <h1>Identificación de Candidato</h1>
     <div class="score">Aciertos: <span id="score-val">0</span> / <span id="total-val">0</span> intentos</div>
     
-    <div class="photo-container">
-        <img id="candidate-photo" src="" alt="Registro Fotográfico">
+    <div class="showcase-container">
+        <div class="photo-container">
+            <img id="candidate-photo" src="" alt="Registro Fotográfico">
+        </div>
+        
+        <div class="comisiones-container">
+            <div class="comisiones-header">
+                <span>🏛️ Comisiones Asignadas</span>
+                <span class="badge-num" id="comisiones-count">0</span>
+            </div>
+            <div class="comisiones-list" id="candidate-comisiones-list">
+                <!-- Se genera dinámicamente -->
+            </div>
+        </div>
     </div>
     
     <div class="options-container" id="options">
@@ -248,8 +372,37 @@
         // Mezclar las 4 opciones finales
         roundOptions = roundOptions.sort(() => 0.5 - Math.random());
 
-        // Actualizar UI
+        // Actualizar UI - Foto
         document.getElementById('candidate-photo').src = currentCandidate.localPhotoPath + '?v=' + new Date().getTime();
+        
+        // Actualizar UI - Comisiones
+        const comList = document.getElementById('candidate-comisiones-list');
+        const comCount = document.getElementById('comisiones-count');
+        comList.innerHTML = '';
+        
+        const comisiones = currentCandidate.comisiones || [];
+        comCount.textContent = comisiones.length;
+        
+        if (comisiones.length === 0) {
+            comList.innerHTML = '<div style="font-size: 12px; color: #94a3b8; font-style: italic; padding: 12px 0; text-align: center;">Sin comisiones registradas en el portal oficial.</div>';
+        } else {
+            comisiones.forEach(com => {
+                const item = document.createElement('div');
+                item.className = 'comision-item';
+                
+                let badgeClass = 'cargo-titular';
+                const cLower = (com.cargo || '').toLowerCase();
+                if (cLower.includes('presiden') && !cLower.includes('vice')) badgeClass = 'cargo-presidente';
+                else if (cLower.includes('vice')) badgeClass = 'cargo-vice';
+                else if (cLower.includes('secretar')) badgeClass = 'cargo-secretario';
+                else if (cLower.includes('suplente')) badgeClass = 'cargo-suplente';
+                
+                const nomCom = com.comision_corta || com.comision || '';
+                item.innerHTML = `<span class="cargo-badge ${badgeClass}">${com.cargo}</span> <span class="comision-name">${nomCom}</span>`;
+                comList.appendChild(item);
+            });
+        }
+        
         document.getElementById('next-btn').style.display = 'none';
         
         const optionsContainer = document.getElementById('options');
