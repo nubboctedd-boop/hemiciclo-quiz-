@@ -277,7 +277,7 @@
         
         <div class="comisiones-container">
             <div class="comisiones-header">
-                <span>🏛️ Comisiones Asignadas</span>
+                <span>Comisiones.</span>
                 <span class="badge-num" id="comisiones-count">0</span>
             </div>
             <div class="comisiones-list" id="candidate-comisiones-list">
@@ -413,8 +413,9 @@
             btn.className = 'option-btn';
             
             let regionStr = cand.districtName === 'Distrito Nacional Único' ? 'Nacional' : cand.districtName;
+            let chamberStr = cand.chamber === 'senado' ? (cand.gender === 'F' ? 'Senadora' : 'Senador') : (cand.gender === 'F' ? 'Diputada' : 'Diputado');
             
-            btn.innerHTML = `<strong>${cand.name}</strong><br><span style="font-size:0.85em; color:#777">${cand.partyName || cand.partyCode} &nbsp;•&nbsp; ${regionStr}</span>`;
+            btn.innerHTML = `<strong>${cand.name}</strong><br><span style="font-size:0.85em; color:#777">${cand.partyName || cand.partyCode} &nbsp;•&nbsp; ${chamberStr} &nbsp;•&nbsp; ${regionStr}</span>`;
             btn.onclick = () => checkAnswer(btn, cand);
             optionsContainer.appendChild(btn);
         });
