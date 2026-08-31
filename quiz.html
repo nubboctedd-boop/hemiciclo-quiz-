@@ -20,7 +20,7 @@
       const p = params.get('party');
       const mode = params.get('mode');
       
-      let pageTitle = 'Evaluación General';
+      let pageTitle = 'Módulo: Senadores y Diputados';
       if (mode === 'revancha') {
           pageTitle = 'Módulo de Reforzamiento';
       } else {
@@ -329,7 +329,7 @@
                     const title = isSenado ? 'Senador' : 'Diputado';
                     document.querySelector('h1').textContent = `Identificación de ${title}`;
                 } else {
-                    document.querySelector('h1').textContent = `Identificación de Candidato`;
+                    document.querySelector('h1').textContent = `Identificación de Parlamentario`;
                 }
                 
                 // Filtro por partido
