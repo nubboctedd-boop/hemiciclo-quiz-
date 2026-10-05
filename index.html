@@ -6,7 +6,9 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>Quiz Congreso 2026</title>
+    <title>Plataforma de Entrenamiento - Congreso Bicameral 2026-2031</title>
+    <!-- Datos de soporte para protocolo file:// y http:// -->
+    <script src="candidatos.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWZ5Y1JWMT"></script>
     <script>
@@ -57,11 +59,11 @@
         .container {
             position: relative;
             z-index: 1;
-            max-width: 600px;
+            max-width: 640px;
             width: 100%;
             margin: 0 auto;
             background: white;
-            padding: 40px;
+            padding: 35px 40px;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             border-top: 6px solid #003366;
@@ -69,38 +71,73 @@
         h1 {
             color: #003366;
             margin-top: 0;
-            margin-bottom: 8px;
-            font-size: 1.8em;
+            margin-bottom: 6px;
+            font-size: 1.7em;
             font-weight: 700;
             line-height: 1.25;
         }
         .subtitle {
-            font-size: 1.05em;
+            font-size: 1em;
             color: #555555;
             font-weight: 500;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
+
+        /* Tabs de Selección de Módulo */
+        .tabs-header {
+            display: flex;
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 22px;
+            gap: 5px;
+        }
+        .tab-btn {
+            flex: 1;
+            padding: 12px 8px;
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            font-size: 14.5px;
+            font-weight: 600;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .tab-btn:hover {
+            color: #003366;
+        }
+        .tab-btn.active {
+            color: #003366;
+            border-bottom-color: #003366;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+
         p.instruction {
             font-size: 0.95em;
-            color: #777777;
-            margin-bottom: 30px;
+            color: #64748b;
+            margin-bottom: 20px;
             line-height: 1.4;
         }
         .menu-options {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 13px;
         }
         a.btn {
             background-color: #ffffff;
             color: #003366;
             text-decoration: none;
-            padding: 18px;
+            padding: 16px;
             border-radius: 6px;
-            font-size: 1.3em;
+            font-size: 1.15em;
             font-weight: 500;
             transition: all 0.2s;
             border: 2px solid #e0e0e0;
+            display: block;
         }
         a.btn:hover {
             background-color: #f0f4f8;
@@ -120,15 +157,22 @@
             font-weight: 600;
         }
         .form-group {
-            margin-bottom: 25px;
+            margin-bottom: 22px;
             text-align: left;
+        }
+        label {
+            font-weight: 600;
+            color: #003366;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
         }
         select {
             width: 100%;
-            padding: 15px;
+            padding: 13px;
             border-radius: 6px;
             border: 1px solid #ccc;
-            font-size: 1.1em;
+            font-size: 1em;
             color: #333;
             background-color: #f9f9f9;
         }
@@ -140,68 +184,128 @@
 <div class="overlay"></div>
 
 <div class="container">
-    <h1>ROSTROS DEL<br>CONGRESO BICAMERAL<br>2026 - 2031</h1>
-    <div class="subtitle">Herramienta de entrenamiento visual</div>
-    <p class="instruction">Filtre por bancada (o elija todas) y seleccione el módulo a entrenar.</p>
-    
-    <div class="form-group">
-        <label for="party-select" style="font-weight: 600; color: #003366; display: block; margin-bottom: 8px;">Filtrar por Bancada (Opcional):</label>
-        <select id="party-select">
-            <option value="todos">-- Todas las Bancadas --</option>
-            <option value="Ahora Nación (AN)">Ahora Nación (AN)</option>
-            <option value="Fuerza Popular (FP)">Fuerza Popular (FP)</option>
-            <option value="Juntos por el Perú (JP)">Juntos por el Perú (JP)</option>
-            <option value="Partido Cívico Obras (OBRAS)">Partido Cívico Obras (OBRAS)</option>
-            <option value="Partido del Buen Gobierno (BG)">Partido del Buen Gobierno (BG)</option>
-            <option value="Renovación Popular (RP)">Renovación Popular (RP)</option>
-        </select>
+    <h1>CONGRESO BICAMERAL<br>2026 - 2031</h1>
+    <div class="subtitle">Plataforma de Entrenamiento Parlamentario</div>
+
+    <!-- Navegación entre Módulos -->
+    <div class="tabs-header">
+        <button class="tab-btn active" id="tab-visual-btn" onclick="switchTab('visual')">👤 Rostros y Comisiones</button>
+        <button class="tab-btn" id="tab-casos-btn" onclick="switchTab('casos')">⚖️ Casos de Reglamento</button>
     </div>
 
-    <div class="menu-options">
-        <a href="#" onclick="startQuiz('senado')" class="btn"><span class="senado">Módulo: Senado</span></a>
-        <a href="#" onclick="startQuiz('diputados')" class="btn"><span class="diputados">Módulo: Diputados</span></a>
-        <a href="#" onclick="startQuiz('todos')" class="btn"><span>Módulo: <span class="senado">Senadores</span> y <span class="diputados">Diputados</span></span></a>
+    <!-- Módulo 1: Reconocimiento Visual y Comisiones -->
+    <div class="tab-content active" id="tab-visual-content">
+        <p class="instruction">Filtre por bancada (o elija todas) y seleccione el módulo de entrenamiento visual.</p>
         
-        <!-- Botón de Modo Revancha (Aparece solo si hay errores) -->
-        <a href="#" id="btn-revancha" onclick="startRevancha()" class="btn" style="display: none; background-color: #ff9800; color: white; border: none; font-size: 1.1em; padding: 14px; margin-top: 15px;">🔄 Módulo de Reforzamiento</a>
+        <div class="form-group">
+            <label for="party-select">Filtrar por Bancada (Opcional):</label>
+            <select id="party-select">
+                <option value="todos">-- Todas las Bancadas --</option>
+                <option value="Ahora Nación (AN)">Ahora Nación (AN)</option>
+                <option value="Fuerza Popular (FP)">Fuerza Popular (FP)</option>
+                <option value="Juntos por el Perú (JP)">Juntos por el Perú (JP)</option>
+                <option value="Partido Cívico Obras (OBRAS)">Partido Cívico Obras (OBRAS)</option>
+                <option value="Partido del Buen Gobierno (BG)">Partido del Buen Gobierno (BG)</option>
+                <option value="Renovación Popular (RP)">Renovación Popular (RP)</option>
+            </select>
+        </div>
+
+        <div class="menu-options">
+            <a href="#" onclick="startQuiz('senado')" class="btn"><span class="senado">Módulo: Senado</span></a>
+            <a href="#" onclick="startQuiz('diputados')" class="btn"><span class="diputados">Módulo: Diputados</span></a>
+            <a href="#" onclick="startQuiz('todos')" class="btn"><span>Módulo: <span class="senado">Senadores</span> y <span class="diputados">Diputados</span></span></a>
+            
+            <!-- Botón de Modo Revancha Visual -->
+            <a href="#" id="btn-revancha-visual" onclick="startRevanchaVisual()" class="btn" style="display: none; background-color: #ff9800; color: white; border: none; font-size: 1.05em; padding: 14px; margin-top: 10px;">🔄 Módulo de Reforzamiento</a>
+        </div>
+    </div>
+
+    <!-- Módulo 2: Casos Prácticos del Reglamento -->
+    <div class="tab-content" id="tab-casos-content">
+        <p class="instruction">Simulador de controversias procedimentales, iter legislativo, control político y quórums.</p>
+
+        <div class="form-group">
+            <label for="category-select">Filtrar por Eje Temático:</label>
+            <select id="category-select">
+                <option value="todos">-- Todos los Ejes Temáticos (Examen Mixto) --</option>
+                <option value="Procedimiento Legislativo">Procedimiento Legislativo Bicameral</option>
+                <option value="Control Político">Control Político y Fiscalización</option>
+                <option value="Quórums y Votaciones">Quórums, Votaciones y Mayorías</option>
+                <option value="Estatuto Parlamentario">Estatuto Parlamentario y Régimen de Ética</option>
+                <option value="Técnica Legislativa">Técnica Legislativa y Calidad Normativa</option>
+            </select>
+        </div>
+
+        <div class="menu-options">
+            <a href="#" onclick="startQuizCasos()" class="btn" style="background-color: #003366; color: white; font-weight: 600; border: none;">
+                🏛️ Iniciar Simulador de Casos
+            </a>
+            
+            <!-- Botón de Modo Revancha de Casos -->
+            <a href="#" id="btn-revancha-casos" onclick="startRevanchaCasos()" class="btn" style="display: none; background-color: #ff9800; color: white; border: none; font-size: 1.05em; padding: 14px; margin-top: 10px;">🔄 Reforzamiento de Casos</a>
+        </div>
     </div>
 
 </div>
 
 <script>
-    // Verificar si hay errores guardados al cargar la página
     document.addEventListener('DOMContentLoaded', () => {
-        const errores = JSON.parse(localStorage.getItem('hemiciclo_errores') || '[]');
-        if (errores.length > 0) {
-            const btn = document.getElementById('btn-revancha');
-            btn.style.display = 'block';
-            btn.innerHTML = `🔄 Módulo de Reforzamiento (${errores.length} pendientes)`;
+        // Verificar errores guardados en Hemiciclo Visual
+        const erroresVisual = JSON.parse(localStorage.getItem('hemiciclo_errores') || '[]');
+        if (erroresVisual.length > 0) {
+            const btnV = document.getElementById('btn-revancha-visual');
+            btnV.style.display = 'block';
+            btnV.innerHTML = `🔄 Módulo de Reforzamiento (${erroresVisual.length} pendientes)`;
         }
 
-        // Cargar mosaico de fondo
-        fetch('candidatos.json?v=' + new Date().getTime())
-            .then(res => res.json())
-            .then(data => {
-                const grid = document.getElementById('bg-grid');
-                // Mezclamos al azar
-                const shuffled = data.sort(() => 0.5 - Math.random());
-                
-                // Repetimos el arreglo para asegurar que llene pantallas de PC grandes
-                let pool = [];
-                while(pool.length < 500) {
-                    pool = pool.concat(shuffled);
-                }
+        // Verificar errores guardados en Casos de Reglamento
+        const erroresCasos = JSON.parse(localStorage.getItem('reglamento_casos_errores') || '[]');
+        if (erroresCasos.length > 0) {
+            const btnC = document.getElementById('btn-revancha-casos');
+            btnC.style.display = 'block';
+            btnC.innerHTML = `🔄 Reforzamiento de Casos (${erroresCasos.length} pendientes)`;
+        }
 
-                // Generamos 500 imágenes para cubrir cualquier resolución
-                for(let i = 0; i < 500; i++) {
-                    const img = document.createElement('img');
-                    img.src = pool[i].localPhotoPath + '?v=' + new Date().getTime();
-                    grid.appendChild(img);
-                }
-            })
-            .catch(err => console.error("Error cargando mosaico:", err));
+        // Cargar mosaico de fondo (dual file:// y http://)
+        function renderMosaico(data) {
+            const grid = document.getElementById('bg-grid');
+            if (!grid) return;
+            const shuffled = data.slice().sort(() => 0.5 - Math.random());
+            let pool = [];
+            while(pool.length < 500) {
+                pool = pool.concat(shuffled);
+            }
+            for(let i = 0; i < 500; i++) {
+                const img = document.createElement('img');
+                img.src = pool[i].localPhotoPath;
+                grid.appendChild(img);
+            }
+        }
+
+        if (window.CANDIDATOS_DATA && window.CANDIDATOS_DATA.length > 0) {
+            renderMosaico(window.CANDIDATOS_DATA);
+        } else {
+            fetch('candidatos.json?v=' + new Date().getTime())
+                .then(res => res.json())
+                .then(data => renderMosaico(data))
+                .catch(err => console.error("Error cargando mosaico:", err));
+        }
     });
 
+    function switchTab(tab) {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+        if (tab === 'visual') {
+            document.getElementById('tab-visual-btn').classList.add('active');
+            document.getElementById('tab-visual-content').classList.add('active');
+        } else {
+            document.getElementById('tab-casos-btn').classList.add('active');
+            document.getElementById('tab-casos-content').classList.add('active');
+        }
+    }
+
+    // Funciones del Módulo Visual
     function startQuiz(chamber) {
         const party = document.getElementById('party-select').value;
         let url = `quiz.html?chamber=${chamber}`;
@@ -211,8 +315,22 @@
         window.location.href = url;
     }
 
-    function startRevancha() {
+    function startRevanchaVisual() {
         window.location.href = `quiz.html?mode=revancha`;
+    }
+
+    // Funciones del Módulo de Casos
+    function startQuizCasos() {
+        const category = document.getElementById('category-select').value;
+        let url = 'quiz_casos.html';
+        if (category !== 'todos') {
+            url += `?category=${encodeURIComponent(category)}`;
+        }
+        window.location.href = url;
+    }
+
+    function startRevanchaCasos() {
+        window.location.href = `quiz_casos.html?mode=revancha`;
     }
 </script>
 

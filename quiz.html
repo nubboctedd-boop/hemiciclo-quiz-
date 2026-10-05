@@ -7,6 +7,8 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <title>Quiz: ¿Quién es este Congresista?</title>
+    <!-- Datos integrados para soporte dual file:// y servidor http:// -->
+    <script src="candidatos.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWZ5Y1JWMT"></script>
     <script>
@@ -304,47 +306,53 @@
     const partyParam = urlParams.get('party');
     const modeParam = urlParams.get('mode');
 
-    // Cargar datos
-    fetch('candidatos.json?v=' + new Date().getTime())
-        .then(res => res.json())
-        .then(data => {
-            let filtered = data;
+    // Cargar datos (dual file:// y http://)
+    function procesarCandidatos(data) {
+        let filtered = data;
+        
+        if (modeParam === 'revancha') {
+            const errores = JSON.parse(localStorage.getItem('hemiciclo_errores') || '[]');
+            filtered = data.filter(c => errores.includes(c.dni));
             
-            if (modeParam === 'revancha') {
-                const errores = JSON.parse(localStorage.getItem('hemiciclo_errores') || '[]');
-                filtered = data.filter(c => errores.includes(c.dni));
-                
-                document.querySelector('h1').textContent = `Módulo de Reforzamiento`;
-                document.title = `Módulo de Reforzamiento`;
-                
-                if (filtered.length === 0) {
-                    document.querySelector('.options-container').innerHTML = '<p>¡Felicidades! Ha completado su módulo de reforzamiento con éxito. <a href="index.html">Volver al menú</a></p>';
-                    return;
-                }
+            document.querySelector('h1').textContent = `Módulo de Reforzamiento`;
+            document.title = `Módulo de Reforzamiento`;
+            
+            if (filtered.length === 0) {
+                document.querySelector('.options-container').innerHTML = '<p>¡Felicidades! Ha completado su módulo de reforzamiento con éxito. <a href="index.html">Volver al menú</a></p>';
+                return;
+            }
+        } else {
+            // Filtro por cámara
+            if (chamberParam === 'senado' || chamberParam === 'diputados') {
+                filtered = filtered.filter(c => c.chamber === chamberParam);
+                const isSenado = chamberParam === 'senado';
+                const title = isSenado ? 'Senador' : 'Diputado';
+                document.querySelector('h1').textContent = `Identificación de ${title}`;
             } else {
-                // Filtro por cámara
-                if (chamberParam === 'senado' || chamberParam === 'diputados') {
-                    filtered = filtered.filter(c => c.chamber === chamberParam);
-                    const isSenado = chamberParam === 'senado';
-                    const title = isSenado ? 'Senador' : 'Diputado';
-                    document.querySelector('h1').textContent = `Identificación de ${title}`;
-                } else {
-                    document.querySelector('h1').textContent = `Identificación de Parlamentario`;
-                }
-                
-                // Filtro por partido
-                if (partyParam) {
-                    filtered = filtered.filter(c => c.partyName === partyParam);
-                }
+                document.querySelector('h1').textContent = `Identificación de Parlamentario`;
             }
             
-            candidatos = filtered;
-            loadNextQuestion();
-        })
-        .catch(err => {
-            document.querySelector('.quiz-container').innerHTML = '<p style="color:red;">Error cargando datos. Recuerda usar un servidor local.</p>';
-            console.error(err);
-        });
+            // Filtro por partido
+            if (partyParam) {
+                filtered = filtered.filter(c => c.partyName === partyParam);
+            }
+        }
+        
+        candidatos = filtered;
+        loadNextQuestion();
+    }
+
+    if (window.CANDIDATOS_DATA && Array.isArray(window.CANDIDATOS_DATA) && window.CANDIDATOS_DATA.length > 0) {
+        procesarCandidatos(window.CANDIDATOS_DATA);
+    } else {
+        fetch('candidatos.json?v=' + new Date().getTime())
+            .then(res => res.json())
+            .then(data => procesarCandidatos(data))
+            .catch(err => {
+                document.querySelector('.quiz-container').innerHTML = '<p style="color:red;">Error cargando datos. Asegúrese de que candidatos.js se encuentra en la misma carpeta.</p>';
+                console.error(err);
+            });
+    }
 
     function loadNextQuestion() {
         if(candidatos.length === 0) {

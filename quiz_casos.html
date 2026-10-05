@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Simulador de Casos: Reglamento del Congreso Bicameral</title>
+    <!-- Datos integrados para funcionamiento tanto en servidor local como en protocolo file:// -->
+    <script src="casos_reglamento.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+            max-width: 820px;
+            width: 100%;
+            border-top: 6px solid #003366;
+            margin: 20px auto;
+            position: relative;
+        }
+        .nav-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #003366;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 20px;
+            transition: color 0.2s;
+        }
+        .nav-back:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        .header-title {
+            color: #003366;
+            margin-top: 0;
+            margin-bottom: 6px;
+            font-size: 1.6em;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+        .header-subtitle {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+        .score-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8fafc;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            font-size: 14px;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 25px;
+        }
+        .score-stat {
+            display: flex;
+            gap: 15px;
+        }
+        .stat-item span {
+            color: #003366;
+        }
+
+        /* Case Box */
+        .case-card {
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            text-align: left;
+        }
+        .badges-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 14px;
+            align-items: center;
+        }
+        .badge {
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .badge-cat { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+        .badge-cham { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+        .badge-diff-inter { background: #fef9c3; color: #854d0e; }
+        .badge-diff-avan { background: #fee2e2; color: #991b1b; }
+        .badge-id { margin-left: auto; font-size: 11px; color: #94a3b8; font-weight: 600; }
+
+        .case-title {
+            font-size: 1.25em;
+            color: #0f172a;
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .case-facts {
+            background: #f8fafc;
+            border-left: 4px solid #003366;
+            padding: 14px 18px;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #334155;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 18px;
+        }
+        .case-question {
+            font-size: 15.5px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 5px;
+            line-height: 1.45;
+        }
+
+        /* Options */
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        .option-btn {
+            background: #ffffff;
+            border: 1.5px solid #cbd5e1;
+            padding: 16px 20px;
+            border-radius: 8px;
+            font-size: 14.5px;
+            line-height: 1.45;
+            color: #1e293b;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .option-btn:hover:not(:disabled) {
+            background-color: #f0f7ff;
+            border-color: #003366;
+            transform: translateY(-1px);
+        }
+        .option-letter {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            min-width: 26px;
+            border-radius: 50%;
+            background: #f1f5f9;
+            color: #475569;
+            font-weight: 700;
+            font-size: 13px;
+        }
+        .option-text {
+            flex: 1;
+        }
+        .option-btn.correct {
+            background-color: #ecfdf5 !important;
+            border-color: #10b981 !important;
+            color: #065f46 !important;
+        }
+        .option-btn.correct .option-letter {
+            background: #10b981;
+            color: white;
+        }
+        .option-btn.wrong {
+            background-color: #fef2f2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+        }
+        .option-btn.wrong .option-letter {
+            background: #ef4444;
+            color: white;
+        }
+        .option-btn:disabled {
+            cursor: default;
+        }
+
+        /* Feedback Box */
+        .feedback-box {
+            display: none;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 22px;
+            margin-bottom: 25px;
+            text-align: left;
+            animation: fadeIn 0.3s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .feedback-status {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .status-correct { color: #059669; }
+        .status-wrong { color: #dc2626; }
+
+        .normative-badge {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 10px 14px;
+            border-radius: 0 6px 6px 0;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 14px;
+        }
+        .ratio-decidendi {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #334155;
+        }
+
+        /* Action Buttons */
+        .btn-action {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s;
+            display: none;
+        }
+        .btn-action:hover {
+            background-color: #002244;
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                padding: 22px 18px;
+            }
+            .case-card {
+                padding: 16px;
+            }
+            .option-btn {
+                padding: 14px;
+                font-size: 13.5px;
+            }
+            .score-bar {
+                flex-direction: column;
+                gap: 8px;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="nav-back">← Volver al Panel Principal</a>
+    
+    <h1 class="header-title" id="page-header-title">Simulador de Casos Parlamentarios</h1>
+    <div class="header-subtitle" id="page-header-sub">Resolución de controversias y procedimientos bajo el Reglamento Bicameral 2026–2031</div>
+
+    <div class="score-bar">
+        <div>Módulo: <span id="current-mode-label" style="color: #003366;">Todos los Casos</span></div>
+        <div class="score-stat">
+            <div class="stat-item">Aciertos: <span id="stat-score">0</span></div>
+            <div class="stat-item">Intentos: <span id="stat-total">0</span></div>
+            <div class="stat-item">Efectividad: <span id="stat-ratio">0%</span></div>
+        </div>
+    </div>
+
+    <!-- Case Presentation Card -->
+    <div class="case-card" id="case-card">
+        <div class="badges-row">
+            <span class="badge badge-cat" id="badge-category">Categoría</span>
+            <span class="badge badge-cham" id="badge-chamber">Cámara</span>
+            <span class="badge badge-diff-inter" id="badge-diff">Intermedio</span>
+            <span class="badge-id" id="badge-case-id">CASO-LEG-000</span>
+        </div>
+        <h2 class="case-title" id="case-title">Título del Caso</h2>
+        <div class="case-facts" id="case-facts">
+            Cargando supuesto de hecho...
+        </div>
+        <div class="case-question" id="case-question">
+            Pregunta procedimental
+        </div>
+    </div>
+
+    <!-- Options Container -->
+    <div class="options-container" id="options-container">
+        <!-- Generado dinámicamente -->
+    </div>
+
+    <!-- Feedback Box -->
+    <div class="feedback-box" id="feedback-box">
+        <div class="feedback-status" id="feedback-status"></div>
+        <div class="normative-badge" id="feedback-norm"></div>
+        <div class="ratio-decidendi" id="feedback-reason"></div>
+    </div>
+
+    <button id="next-btn" class="btn-action" onclick="loadNextCase()">Siguiente Caso Práctico</button>
+</div>
+
+<script>
+    let casos = [];
+    let poolCasos = [];
+    let currentCase = null;
+    let score = 0;
+    let total = 0;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryParam = urlParams.get('category');
+    const modeParam = urlParams.get('mode');
+
+    // Cargar casos: soporte dual (protocolo file:// directo y http:// con servidor)
+    if (window.CASOS_REGLAMENTO_DATA && Array.isArray(window.CASOS_REGLAMENTO_DATA) && window.CASOS_REGLAMENTO_DATA.length > 0) {
+        casos = window.CASOS_REGLAMENTO_DATA;
+        initModule();
+    } else {
+        fetch('casos_reglamento.json?v=' + new Date().getTime())
+            .then(res => {
+                if (!res.ok) throw new Error("Error en respuesta de red");
+                return res.json();
+            })
+            .then(data => {
+                casos = data;
+                initModule();
+            })
+            .catch(err => {
+                document.querySelector('.container').innerHTML = `
+                    <div style="padding: 20px; text-align: center; color: #dc2626;">
+                        <h3>Error al cargar los casos prácticos</h3>
+                        <p>No se pudo acceder a los casos. Verifique que 'casos_reglamento.js' se encuentre en el mismo directorio.</p>
+                        <a href="index.html" class="nav-back">Volver al inicio</a>
+                    </div>
+                `;
+                console.error(err);
+            });
+    }
+
+    function initModule() {
+        let filtered = [...casos];
+        const modeLabel = document.getElementById('current-mode-label');
+
+        if (modeParam === 'revancha') {
+            const errores = JSON.parse(localStorage.getItem('reglamento_casos_errores') || '[]');
+            filtered = casos.filter(c => errores.includes(c.id));
+            modeLabel.textContent = `Módulo de Reforzamiento (${filtered.length} pendientes)`;
+            document.getElementById('page-header-title').textContent = 'Módulo de Reforzamiento de Casos';
+
+            if (filtered.length === 0) {
+                document.getElementById('case-card').innerHTML = `
+                    <div style="text-align: center; padding: 25px 10px;">
+                        <h3 style="color: #059669; margin-top:0;">¡Excelente trabajo!</h3>
+                        <p style="color: #475569;">No tiene casos pendientes en el módulo de reforzamiento.</p>
+                        <a href="index.html" style="display: inline-block; margin-top: 15px; padding: 10px 20px; background: #003366; color: white; text-decoration: none; border-radius: 6px; font-weight: 600;">Volver al Menú Principal</a>
+                    </div>
+                `;
+                return;
+            }
+        } else if (categoryParam && categoryParam !== 'todos') {
+            filtered = filtered.filter(c => c.categoria === categoryParam);
+            modeLabel.textContent = categoryParam;
+        } else {
+            modeLabel.textContent = 'Simulador Mixto Completo';
+        }
+
+        if (filtered.length === 0) {
+            document.getElementById('case-card').innerHTML = '<p>No se encontraron casos disponibles para el filtro seleccionado.</p>';
+            return;
+        }
+
+        // Barajar aleatoriamente
+        poolCasos = filtered.sort(() => 0.5 - Math.random());
+        loadNextCase();
+    }
+
+    function loadNextCase() {
+        if (poolCasos.length === 0) {
+            showEndModule();
+            return;
+        }
+
+        currentCase = poolCasos.shift();
+
+        // Ocultar feedback y botón siguiente
+        document.getElementById('feedback-box').style.display = 'none';
+        document.getElementById('next-btn').style.display = 'none';
+
+        // Badges
+        document.getElementById('badge-category').textContent = currentCase.categoria;
+        document.getElementById('badge-chamber').textContent = currentCase.camara;
+        document.getElementById('badge-case-id').textContent = currentCase.id;
+
+        const diffBadge = document.getElementById('badge-diff');
+        diffBadge.textContent = currentCase.dificultad;
+        diffBadge.className = 'badge ' + (currentCase.dificultad === 'Avanzado' ? 'badge-diff-avan' : 'badge-diff-inter');
+
+        // Textos del caso
+        document.getElementById('case-title').textContent = currentCase.titulo;
+        document.getElementById('case-facts').textContent = currentCase.caso;
+        document.getElementById('case-question').textContent = currentCase.pregunta;
+
+        // Opciones
+        const optContainer = document.getElementById('options-container');
+        optContainer.innerHTML = '';
+
+        currentCase.opciones.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.innerHTML = `
+                <span class="option-letter">${opt.id.toUpperCase()}</span>
+                <span class="option-text">${opt.texto}</span>
+            `;
+            btn.onclick = () => checkAnswer(btn, opt.id);
+            optContainer.appendChild(btn);
+        });
+    }
+
+    function checkAnswer(selectedBtn, selectedId) {
+        const buttons = document.querySelectorAll('.option-btn');
+        buttons.forEach(b => b.disabled = true);
+
+        total++;
+        document.getElementById('stat-total').textContent = total;
+
+        let errores = JSON.parse(localStorage.getItem('reglamento_casos_errores') || '[]');
+        const isCorrect = (selectedId === currentCase.respuesta_correcta);
+
+        const feedbackBox = document.getElementById('feedback-box');
+        const feedbackStatus = document.getElementById('feedback-status');
+        const feedbackNorm = document.getElementById('feedback-norm');
+        const feedbackReason = document.getElementById('feedback-reason');
+
+        if (isCorrect) {
+            selectedBtn.classList.add('correct');
+            score++;
+            document.getElementById('stat-score').textContent = score;
+
+            feedbackStatus.className = 'feedback-status status-correct';
+            feedbackStatus.innerHTML = '✔ Resolución Jurídica Conforme a Derecho';
+
+            // Quitar de errores si estaba
+            errores = errores.filter(id => id !== currentCase.id);
+            localStorage.setItem('reglamento_casos_errores', JSON.stringify(errores));
+        } else {
+            selectedBtn.classList.add('wrong');
+            buttons.forEach((b, idx) => {
+                if (currentCase.opciones[idx].id === currentCase.respuesta_correcta) {
+                    b.classList.add('correct');
+                }
+            });
+
+            feedbackStatus.className = 'feedback-status status-wrong';
+            feedbackStatus.innerHTML = '✖ Resolución Incorrecta / Transgresión Reglamentaria';
+
+            // Agregar a errores
+            if (!errores.includes(currentCase.id)) {
+                errores.push(currentCase.id);
+                localStorage.setItem('reglamento_casos_errores', JSON.stringify(errores));
+            }
+        }
+
+        // Ratio de efectividad
+        const ratio = Math.round((score / total) * 100);
+        document.getElementById('stat-ratio').textContent = `${ratio}%`;
+
+        // Llenar fundamentación
+        feedbackNorm.innerHTML = `<strong>Base Normativa Oficial:</strong> ${currentCase.base_normativa}`;
+        feedbackReason.innerHTML = `<strong>Ratio Decidendi:</strong> ${currentCase.fundamentacion}`;
+        feedbackBox.style.display = 'block';
+
+        // Configurar botón siguiente
+        const nextBtn = document.getElementById('next-btn');
+        if (poolCasos.length === 0) {
+            nextBtn.textContent = 'Ver Resultados Finales';
+        } else {
+            nextBtn.textContent = 'Siguiente Caso Práctico';
+        }
+        nextBtn.style.display = 'block';
+    }
+
+    function showEndModule() {
+        const container = document.querySelector('.container');
+        const ratio = Math.round((score / total) * 100);
+        const errores = JSON.parse(localStorage.getItem('reglamento_casos_errores') || '[]');
+
+        container.innerHTML = `
+            <a href="index.html" class="nav-back">← Volver al Panel Principal</a>
+            <div style="text-align: center; padding: 30px 15px;">
+                <h1 style="color: #003366; margin-top:0;">Evaluación Concluida</h1>
+                <p style="font-size: 16px; color: #475569; margin-bottom: 25px;">Ha completado la ronda de casos prácticos parlamentarios.</p>
+                
+                <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px; max-width: 420px; margin: 0 auto 30px; padding: 20px;">
+                    <div style="font-size: 2.2em; font-weight: 800; color: ${ratio >= 70 ? '#059669' : '#dc2626'};">${ratio}%</div>
+                    <div style="font-size: 14px; color: #64748b; margin-top: 5px;">Aciertos: ${score} de ${total} casos evaluados</div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 12px; max-width: 420px; margin: 0 auto;">
+                    ${errores.length > 0 ? `
+                        <a href="quiz_casos.html?mode=revancha" style="display: block; padding: 14px; background: #ff9800; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 15px;">
+                            🔄 Módulo de Reforzamiento (${errores.length} casos por corregir)
+                        </a>
+                    ` : ''}
+                    <a href="quiz_casos.html" style="display: block; padding: 14px; background: #003366; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 15px;">
+                        🔁 Reintentar Simulador Completo
+                    </a>
+                    <a href="index.html" style="display: block; padding: 14px; background: #ffffff; color: #003366; text-decoration: none; border: 1.5px solid #003366; border-radius: 8px; font-weight: 600; font-size: 15px;">
+                        🏠 Volver al Panel Principal
+                    </a>
+                </div>
+            </div>
+        `;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "CASO-LEG-001",
+    "categoria": "Procedimiento Legislativo",
+    "camara": "Cámara de Diputados",
+    "dificultad": "Avanzado",
+    "titulo": "Observación de autógrafa proveniente del Congreso Unicameral 2021-2026",
+    "caso": "El Poder Ejecutivo observa una autógrafa de ley remitida en las últimas semanas del Congreso Unicameral (julio de 2026). En agosto de 2026, la bancada mayoritaria en la recién instalada Cámara de Diputados solicita que la Comisión de Economía emita directamente un dictamen de insistencia y lo agende en el Pleno para su promulgación inmediata por el Presidente del Congreso con 66 votos.",
+    "pregunta": "¿Es procedente el trámite de insistencia directa planteado por la bancada?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Sí, porque la Cámara de Diputados asume plenamente las funciones del Congreso Unicameral cesante y puede insistir con la mitad más uno de su número legal."
+      },
+      {
+        "id": "b",
+        "texto": "No. Al haberse extinguido el Congreso Unicameral, la autógrafa debe tramitarse obligatoriamente como una nueva iniciativa legislativa de foja cero en Diputados y ser remitida posteriormente al Senado."
+      },
+      {
+        "id": "c",
+        "texto": "No, porque corresponde que la insistencia sea aprobada conjuntamente por la Comisión Permanente bicameral en sesión extraordinaria."
+      },
+      {
+        "id": "d",
+        "texto": "Sí, siempre que se apruebe previamente la dispensa de dictamen en la Junta de Portavoces de la Cámara de Diputados."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Segunda Disposición Complementaria Transitoria del Reglamento del Congreso de la República (Res. Leg. N° 004-2025-2026-CR) y Art. 105 de la Constitución.",
+    "fundamentacion": "La Segunda Disposición Complementaria Transitoria del Reglamento del Congreso establece taxativamente que las autógrafas observadas por el Poder Ejecutivo hasta el 26 de julio de 2026 no pueden ser objeto de insistencia ni allanamiento por no existir ya la cámara originaria que las sancionó. Por imperativo normativo, se tramitan obligatoriamente como una nueva proposición legislativa, debiendo cumplir todo el iter ordinario: dictamen de comisión en Diputados, aprobación del Pleno de Diputados y remisión obligatoria al Senado para revisión."
+  },
+  {
+    "id": "CASO-LEG-002",
+    "categoria": "Procedimiento Legislativo",
+    "camara": "Cámara de Diputados",
+    "dificultad": "Intermedio",
+    "titulo": "Opciones procesales frente a autógrafas observadas en el régimen bicameral",
+    "caso": "Durante el periodo 2026-2027, el Presidente de la República devuelve con observaciones una autógrafa de ley ordinaria aprobada por ambas cámaras. La comisión dictaminadora de la Cámara de Diputados decide no allanarse pero tampoco insistir textualmente, sino redactar un texto nuevo introduciendo materias tributarias que no formaban parte de la autógrafa original ni de las observaciones formuladas por el Ejecutivo.",
+    "pregunta": "¿Cómo debe calificar procesalmente la Mesa Directiva el dictamen emitido por la comisión?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Como un dictamen de allanamiento con texto sustitutorio de trámite prioritario y de votación inmediata en el Pleno."
+      },
+      {
+        "id": "b",
+        "texto": "Como una insistencia calificada sujeta únicamente a la aprobación por dos tercios del número legal de diputados (87 votos)."
+      },
+      {
+        "id": "c",
+        "texto": "Como una nueva iniciativa legislativa, por haberse desnaturalizado el objeto de la observación al incluir temas no conexos ni debatidos."
+      },
+      {
+        "id": "d",
+        "texto": "Debe remitirse de inmediato al Senado para que convoque de oficio a una Comisión Mixta de Conferencia."
+      }
+    ],
+    "respuesta_correcta": "c",
+    "base_normativa": "Artículos 151 y 152 del Reglamento de la Cámara de Diputados (Res. Leg. N° 005-2025-2026-CR).",
+    "fundamentacion": "El Artículo 152 del Reglamento de la Cámara de Diputados señala de manera cerrada que frente a observaciones del Ejecutivo solo caben tres dictámenes: 1) Allanamiento (aceptar las observaciones sin alterar lo no observado); 2) Insistencia (reiterar el texto original); y 3) Nuevo Proyecto de Ley, si la comisión incorpora materias o preceptos no relacionados con las observaciones. Al incluir materias tributarias ajenas a la controversia original, la propuesta pierde su naturaleza de insistencia/allanamiento y se califica como nuevo proyecto."
+  },
+  {
+    "id": "CASO-LEG-003",
+    "categoria": "Procedimiento Legislativo",
+    "camara": "Senado de la República",
+    "dificultad": "Intermedio",
+    "titulo": "Modificaciones de la Cámara Revisora (Senado) al texto aprobado por Diputados",
+    "caso": "La Cámara de Diputados aprueba un proyecto de ley de desarrollo agrario y lo remite al Senado. El Pleno del Senado debate la propuesta y aprueba modificaciones de fondo al texto original remitido por Diputados con 35 votos a favor. El Presidente del Senado dispone remitir directamente la autógrafa con modificaciones al Presidente de la República para su promulgación.",
+    "pregunta": "¿Es correcto el trámite dispuesto por la Presidencia del Senado?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Sí, porque el Senado es la cámara de mayor jerarquía política y su aprobación enmienda definitivamente la ley."
+      },
+      {
+        "id": "b",
+        "texto": "No. Al haber introducido enmiendas, el proyecto debe retornar a la Cámara de Diputados para que esta decida si se allana a las modificaciones o insiste en su texto original."
+      },
+      {
+        "id": "c",
+        "texto": "No, porque toda modificación del Senado exige obligatoriamente la ratificación por el Tribunal Constitucional antes de ser promulgada."
+      },
+      {
+        "id": "d",
+        "texto": "Sí, siempre que las enmiendas hayan sido aprobadas por más de la mitad del número legal de senadores (31 votos)."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Artículo 105 de la Constitución y Artículos 149 del Reglamento de Diputados y 105 del Reglamento del Senado.",
+    "fundamentacion": "En el régimen bicameral peruano, la cámara de origen (Diputados) tiene la potestad de evaluar las modificaciones formuladas por la cámara revisora (Senado). Si el Senado aprueba enmiendas, el proyecto debe regresar a Diputados. Si Diputados acepta las modificaciones con mayoría simple, la ley queda sancionada; si Diputados no las acepta, puede insistir en su texto original con el voto de la mitad más uno del número legal (66 votos)."
+  },
+  {
+    "id": "CASO-LEG-004",
+    "categoria": "Procedimiento Legislativo",
+    "camara": "Congreso de la República",
+    "dificultad": "Avanzado",
+    "titulo": "Discrepancias persistentes y Comisión Mixta de Conferencia",
+    "caso": "La Cámara de Diputados y el Senado mantienen discrepancias irreconciliables respecto a tres artículos clave de una ley de contrataciones públicas. Se designa una Comisión Mixta de Conferencia integrada por igual número de diputados y senadores. La comisión de conferencia formula un texto de consenso y redacta su informe final.",
+    "pregunta": "¿Cuál es el procedimiento de aprobación y votación del informe de la Comisión Mixta de Conferencia?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Debe ser aprobado en sesión conjunta de ambas cámaras (Pleno del Congreso) por mayoría simple."
+      },
+      {
+        "id": "b",
+        "texto": "Debe ser aprobado por el Pleno de la Cámara de Diputados y luego por el Pleno del Senado, en votación separada en cada cámara, sin admitirse nuevas enmiendas al texto del informe."
+      },
+      {
+        "id": "c",
+        "texto": "Basta con que el Presidente de la Comisión Mixta de Conferencia suscriba la autógrafa y la remita al Poder Ejecutivo."
+      },
+      {
+        "id": "d",
+        "texto": "Debe ser sometido a referéndum facultativo convocado por la Mesa Directiva del Senado."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Artículo 83 del Reglamento del Congreso de la República (Res. Leg. N° 004-2025-2026-CR).",
+    "fundamentacion": "El informe elaborado por una Comisión Mixta de Conferencia debe someterse a la consideración y votación de los Plenos de ambas cámaras de manera separada e independiente. En ninguna de las dos cámaras se admiten enmiendas o textos sustitutorios sobre el informe de conferencia: solo procede aprobarlo o rechazarlo en su totalidad."
+  },
+  {
+    "id": "CASO-LEG-005",
+    "categoria": "Control Político",
+    "camara": "Cámara de Diputados",
+    "dificultad": "Intermedio",
+    "titulo": "Requisitos y plazos para la moción de interpelación a Ministros",
+    "caso": "En la Cámara de Diputados, se presenta un día martes una moción de interpelación al Ministro de Transportes firmada por 22 diputados (más del 15% del número legal). La bancada firmante solicita al Presidente de la Cámara que someta a debate y votación inmediata la admisión de la moción en esa misma sesión y cite al ministro para el día siguiente por razones de emergencia nacional.",
+    "pregunta": "¿Qué debe resolver la Presidencia de la Cámara de Diputados conforme a reglamento?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Proceder con el debate y votación inmediata de la admisión en la misma sesión y citar al ministro para el día siguiente, atendiendo a la urgencia invocada."
+      },
+      {
+        "id": "b",
+        "texto": "Dar cuenta de la moción en la sesión de presentación; posponer su admisión a debate para la siguiente sesión plenaria; y, si se admite, fijar la comparecencia del ministro entre el tercer y décimo día calendario posterior."
+      },
+      {
+        "id": "c",
+        "texto": "Rechazar la moción por requerir un mínimo del 25% de firmas del número legal de diputados (33 firmas)."
+      },
+      {
+        "id": "d",
+        "texto": "Derivar la moción a la Comisión de Transportes para que emita dictamen de admisibilidad previo en 15 días hábiles."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Artículos 154 y 155 del Reglamento de la Cámara de Diputados (Res. Leg. N° 005-2025-2026-CR).",
+    "fundamentacion": "La moción de interpelación requiere un mínimo del 15% de firmas del número legal de diputados (20 diputados, por lo que 22 es admisible). Sin embargo, reglamentariamente se da cuenta de ella y su debate/votación de admisión se realiza indefectiblemente en la sesión plenaria subsiguiente (no el mismo día). Una vez admitida (con no menos del tercio de diputados hábiles presentes), la asistencia del ministro se programa no antes del tercer día ni después del décimo día calendario posterior a la votación."
+  },
+  {
+    "id": "CASO-LEG-006",
+    "categoria": "Control Político",
+    "camara": "Cámara de Diputados",
+    "dificultad": "Intermedio",
+    "titulo": "Moción de Censura a Ministro y periodo de enfriamiento",
+    "caso": "Tras culminar la sesión de interpelación al Ministro del Interior en la Cámara de Diputados, tres bancadas presentan una moción de censura con 36 firmas (más del 25% legal de 130). Los autores exigen que, al estar presentes todos los parlamentarios, se proceda al debate y votación inmediata antes de levantar la sesión para evitar dilaciones políticas.",
+    "pregunta": "¿Es legalmente admisible votar la censura en esa misma sesión?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Sí, si la Junta de Portavoces aprueba por unanimidad la exoneración del plazo de enfriamiento."
+      },
+      {
+        "id": "b",
+        "texto": "No. La moción de censura sólo puede ser debatida y votada entre el cuarto y el décimo día calendario posterior a su presentación formal."
+      },
+      {
+        "id": "c",
+        "texto": "No, porque la censura a ministros de Estado es competencia exclusiva del Senado de la República."
+      },
+      {
+        "id": "d",
+        "texto": "Sí, siempre que se apruebe una cuestión previa con la mayoría de dos tercios de los diputados presentes."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Artículo 132 de la Constitución y Artículo 156 del Reglamento de la Cámara de Diputados.",
+    "fundamentacion": "La moción de censura exige un plazo perentorio de enfriamiento constitucional y reglamentario: solo puede debatirse y votarse entre el cuarto y el décimo día calendario posteriores a su presentación. Este plazo no es dispensable por la Junta de Portavoces ni por el Pleno, pues garantiza la debida deliberación y el derecho de defensa del titular del sector."
+  },
+  {
+    "id": "CASO-LEG-007",
+    "categoria": "Control Político",
+    "camara": "Cámara de Diputados",
+    "dificultad": "Avanzado",
+    "titulo": "Límites materiales de la Cuestión de Confianza del Poder Ejecutivo",
+    "caso": "El Presidente del Consejo de Ministros concurre a la Cámara de Diputados y formula cuestión de confianza vinculada a la aprobación inmediata y sin modificaciones de un proyecto de ley que reforma el Artículo 206 de la Constitución (mecanismo de reforma constitucional) y modifica el Reglamento del Congreso. La Presidencia de la Mesa Directiva de Diputados rechaza de plano la cuestión de confianza.",
+    "pregunta": "¿Es jurídicamente válido el rechazo de plano dispuesto por la Mesa Directiva de Diputados?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "No, porque el Poder Ejecutivo tiene iniciativa legislativa plena y puede vincular la cuestión de confianza a cualquier materia que considere indispensable para su gestión."
+      },
+      {
+        "id": "b",
+        "texto": "Sí, porque el Ejecutivo está prohibido de plantear confianza sobre reformas constitucionales o sobre competencias exclusivas y excluyentes del Congreso."
+      },
+      {
+        "id": "c",
+        "texto": "No, porque todo rechazo de plano equivale automáticamente a una denegatoria de confianza y genera crisis ministerial total."
+      },
+      {
+        "id": "d",
+        "texto": "Sí, pero únicamente si el rechazo de plano es ratificado previamente por el Pleno del Tribunal Constitucional."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Ley N° 31355, STC Exp. N° 00004-2022-PI/TC, STC Exp. N° 00004-2022-PCC/TC (Sentencia 307/2023) y Art. 86 Reglamento del Congreso.",
+    "fundamentacion": "Tanto la Ley N° 31355 como la jurisprudencia vinculante del Tribunal Constitucional (STC 00004-2022-PI/TC y STC 00004-2022-PCC/TC) determinan que la cuestión de confianza sólo procede respecto de materias de competencia del Poder Ejecutivo relacionadas directamente con su política general de gobierno. Está prohibido formularla sobre reformas constitucionales o sobre competencias exclusivas del Congreso (como sus reglamentos). La Mesa Directiva tiene la facultad reglamentaria de rechazarla de plano sin que ello compute como denegatoria."
+  },
+  {
+    "id": "CASO-LEG-008",
+    "categoria": "Control Político",
+    "camara": "Cámara de Diputados",
+    "dificultad": "Avanzado",
+    "titulo": "Inadmisibilidad de la 'Denegatoria Fáctica' de la Cuestión de Confianza",
+    "caso": "La Cámara de Diputados envía al archivo un proyecto de ley ordinario del Ejecutivo sobre reorganización de ministerios. El Consejo de Ministros publica un Decreto Supremo declarando que el archivo del proyecto equivale a una 'denegatoria fáctica' de la confianza ministerial y comunica la renuncia del Gabinete, computando el hecho como la primera crisis ministerial para una eventual disolución parlamentaria.",
+    "pregunta": "¿Qué valor jurídico tiene la interpretación de 'denegatoria fáctica' sostenida por el Ejecutivo?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Es plenamente válida, conforme a la costumbre parlamentaria fijada en el año 2019."
+      },
+      {
+        "id": "b",
+        "texto": "Es nula de pleno derecho. El Tribunal Constitucional determinó que la denegatoria de confianza debe ser siempre expresa y que su calificación compete de forma exclusiva y excluyente al Parlamento."
+      },
+      {
+        "id": "c",
+        "texto": "Es válida si el Senado no emite un pronunciamiento contradictorio en un plazo de 48 horas."
+      },
+      {
+        "id": "d",
+        "texto": "Solo es válida si la Cámara de Diputados omite pronunciarse en un plazo de treinta días hábiles."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "STC Exp. N° 00004-2022-PCC/TC (Sentencia 307/2023) del Tribunal Constitucional.",
+    "fundamentacion": "En la Sentencia 307/2023, el Tribunal Constitucional expulsó definitivamente del ordenamiento peruano la figura de la 'denegatoria fáctica'. El TC sentenció que la calificación de la cuestión de confianza es potestad exclusiva y excluyente del Congreso de la República, y que para que se configure una crisis ministerial la votación denegatoria debe ser expresa e indubitable en el Pleno. Ningún acto del Ejecutivo puede atribuir una denegatoria tácita."
+  },
+  {
+    "id": "CASO-LEG-009",
+    "categoria": "Control Político",
+    "camara": "Cámara de Diputados",
+    "dificultad": "Intermedio",
+    "titulo": "Garantías del Debido Proceso en Comisiones Investigadoras",
+    "caso": "Una Comisión Investigadora de la Cámara de Diputados que indaga presuntos actos de corrupción en obras viales cita a un exfuncionario público mediante oficio simple, sin consignar si asiste como testigo o como investigado, ni detallar los hechos que se le atribuyen. En la sesión, la comisión le niega el ingreso a su abogado patrocinador alegando que las comisiones del Congreso tienen fuero político reservado.",
+    "pregunta": "¿Es jurídicamente legítima la actuación de la Comisión Investigadora?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Sí, porque el control parlamentario tiene naturaleza eminentemente política y no está sujeto a las reglas procesales del Poder Judicial."
+      },
+      {
+        "id": "b",
+        "texto": "No. Vulnera flagrantemente el debido proceso parlamentario: toda citación debe informar con antelación la calidad (testigo o investigado), detallar los hechos imputados y garantizar la presencia obligatoria de la defensa técnica."
+      },
+      {
+        "id": "c",
+        "texto": "Sí, siempre que la sesión haya sido declarada reservada por mayoría de los miembros de la comisión."
+      },
+      {
+        "id": "d",
+        "texto": "No, únicamente porque la citación a comisiones investigadoras debe ser firmada por el Presidente del Congreso y no por el presidente de la comisión."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "STC Exp. N° 00156-2012-PHC/TC, STC Exp. N° 00001-2023-PCC/TC y Art. 97 de la Constitución.",
+    "fundamentacion": "El Tribunal Constitucional ha establecido de forma vinculante que las comisiones investigadoras parlamentarias están sometidas al debido proceso constitucional. Es mandato ineludible notificar previamente al compareciente sobre su condición jurídica (testigo o investigado), describir los hechos e imputaciones concretas, facilitarle acceso al acervo documental y permitir la presencia activa y asistencia de su abogado defensor. La vulneración de estas garantías vicia de nulidad el procedimiento y el informe final."
+  },
+  {
+    "id": "CASO-LEG-010",
+    "categoria": "Control Político",
+    "camara": "Senado de la República",
+    "dificultad": "Avanzado",
+    "titulo": "Interferencias judiciales en actos 'interna corporis' del Parlamento",
+    "caso": "El Pleno del Senado programa la sesión para elegir a los magistrados del Tribunal Constitucional mediante comisión especial de selección. Un juez constitucional de primera instancia admite una demanda de amparo interpuesta por un tercero y concede una medida cautelar ordenando la suspensión provisional de la votación en el Senado bajo apercibimiento penal.",
+    "pregunta": "¿Cómo debe actuar la Mesa Directiva del Senado conforme a los precedentes vinculantes?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Acatar de inmediato la orden judicial y suspender indefinidamente el proceso de selección de magistrados."
+      },
+      {
+        "id": "b",
+        "texto": "Proseguir con la votación y el procedimiento parlamentario, por tratarse de un acto de exclusiva potestad política ('interna corporis') inmune a medidas cautelares judiciales que interfieran con la función del Congreso."
+      },
+      {
+        "id": "c",
+        "texto": "Remitir el expediente a la Cámara de Diputados para que esta decida si se continúa con el concurso público."
+      },
+      {
+        "id": "d",
+        "texto": "Suspender la sesión y convocar a la Junta de Fiscales Supremos para que dirima la controversia competencial."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "STC Exp. N° 00001-2023-PCC/TC (Sentencia 101/2023) y Arts. 82 y 201 de la Constitución.",
+    "fundamentacion": "En la Sentencia 101/2023, el Tribunal Constitucional ratificó el principio de corrección funcional y determinó que el Poder Judicial no puede admitir amparos ni dictar medidas cautelares que pretendan frenar, sustituir o anular los actos políticos exclusivos del Congreso (*interna corporis*), como la elección del Defensor del Pueblo o de magistrados del TC. Los jueces que interfieran en estas competencias incurren en extralimitación competencial."
+  },
+  {
+    "id": "CASO-LEG-011",
+    "categoria": "Quórums y Votaciones",
+    "camara": "Senado de la República",
+    "dificultad": "Intermedio",
+    "titulo": "Mayoría requerida para Leyes Orgánicas en el Senado",
+    "caso": "El Pleno del Senado debate un proyecto de ley orgánica sobre la estructura de los ministerios. En la votación se registran 46 senadores presentes en el hemiciclo: 30 votan a favor, 10 en contra y 6 se abstienen. El Presidente del Senado declara aprobada la ley orgánica argumentando que 30 votos superan ampliamente a los 10 en contra y a la mayoría simple de los presentes.",
+    "pregunta": "¿Fue válidamente aprobada la Ley Orgánica conforme al marco constitucional y reglamentario?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Sí, porque 30 votos superan a la mitad más uno de los 46 senadores que estuvieron presentes al momento de la votación."
+      },
+      {
+        "id": "b",
+        "texto": "No. Las leyes orgánicas exigen para su aprobación el voto conforme de la mitad más uno del número legal de miembros del Senado, es decir, un mínimo estricto de 31 votos."
+      },
+      {
+        "id": "c",
+        "texto": "Sí, siempre que las 6 abstenciones se computen reglamentariamente a favor de la posición mayoritaria."
+      },
+      {
+        "id": "d",
+        "texto": "No, porque las leyes orgánicas requieren dos tercios del número legal de senadores (40 votos)."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Artículo 106 de la Constitución (modificado por Ley N° 31988) y Artículo 103 del Reglamento del Senado (Res. Leg. N° 006-2025-2026-CR).",
+    "fundamentacion": "El Artículo 106 de la Constitución y el Reglamento del Senado exigen que las leyes orgánicas se aprueben con el voto favorable de la mayoría absoluta del número legal de miembros de la cámara (la mitad más uno del total de 60 senadores = 31 votos). Habiendo obtenido solo 30 votos a favor, no se alcanzó la votación constitucional requerida, independientemente de los presentes o de los votos en contra."
+  },
+  {
+    "id": "CASO-LEG-012",
+    "categoria": "Quórums y Votaciones",
+    "camara": "Senado de la República",
+    "dificultad": "Avanzado",
+    "titulo": "Mayorías de Reforma Constitucional en el sistema bicameral",
+    "caso": "El Senado aprueba en primera legislatura un proyecto de reforma constitucional que modifica el régimen del Consejo para la Reforma del Sistema de Justicia. La votación arroja 41 votos a favor de un total de 60 senadores. Un grupo de senadores consulta si dicha votación permite promulgar la reforma de inmediato sin referéndum.",
+    "pregunta": "¿Qué trámite exige la Constitución para perfeccionar la reforma sin ir a referéndum?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "La reforma ya está perfeccionada porque superó los dos tercios del número legal (40 votos) en el Senado."
+      },
+      {
+        "id": "b",
+        "texto": "Requiere ser aprobada en la siguiente legislatura ordinaria sucesiva por no menos de dos tercios del número legal de miembros en ambas cámaras (87 en Diputados y 40 en el Senado)."
+      },
+      {
+        "id": "c",
+        "texto": "Debe ser ratificada por la Comisión Permanente con mayoría simple en receso parlamentario."
+      },
+      {
+        "id": "d",
+        "texto": "Al superar los 40 votos en el Senado, la ratificación en Diputados solo exige mayoría simple de presentes."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Artículo 206 de la Constitución Política del Perú (modificado por Ley N° 31988).",
+    "fundamentacion": "El Artículo 206 de la Constitución establece que toda reforma constitucional debe ser aprobada por la Cámara de Diputados y por el Senado con mayoría absoluta del número legal de sus miembros, y ratificada mediante referéndum. Puede omitirse el referéndum cuando el acuerdo se aprueba en dos legislaturas ordinarias sucesivas con una votación favorable no menor de dos tercios del número legal de miembros en cada cámara (mínimo 87 diputados y 40 senadores en ambas oportunidades)."
+  },
+  {
+    "id": "CASO-LEG-013",
+    "categoria": "Quórums y Votaciones",
+    "camara": "Cámara de Diputados",
+    "dificultad": "Intermedio",
+    "titulo": "Uso del Voto Dirimente en comisiones ordinarias",
+    "caso": "En la Comisión de Presupuesto de la Cámara de Diputados se debate un dictamen con texto sustitutorio. Asisten 18 diputados. En la votación se producen 8 votos a favor, 8 votos en contra y 2 abstenciones. El presidente de la comisión emite su voto originario como miembro y, al constatarse el empate 8 a 8, ejerce su voto dirimente para desempatar y declarar aprobado el dictamen.",
+    "pregunta": "¿Es reglamentariamente válido el uso del voto dirimente por parte del presidente de la comisión?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "No, porque el voto dirimente solo existe en la Corte Suprema y no en las comisiones parlamentarias."
+      },
+      {
+        "id": "b",
+        "texto": "Sí. El presidente de comisión tiene voto ordinario como integrante y, en caso de empate formal entre los votos afirmativos y negativos, goza de voto dirimente de calidad para resolver la paridad."
+      },
+      {
+        "id": "c",
+        "texto": "No, porque si hay abstenciones el voto dirimente queda suspendido hasta una segunda votación en la siguiente sesión."
+      },
+      {
+        "id": "d",
+        "texto": "Sí, pero requiere la conformidad previa de la Junta de Portavoces de la Cámara de Diputados."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Artículo 59 y 64 del Reglamento de la Cámara de Diputados (Res. Leg. N° 005-2025-2026-CR).",
+    "fundamentacion": "El Reglamento parlamentario faculta a los presidentes de comisiones ordinarias a emitir su voto personal como miembros natos y, si tras el escrutinio se suscita un empate estricto entre posiciones a favor y en contra, ejercer el voto dirimente para definir la decisión de la comisión. Las abstenciones no computan para definir el empate entre voluntades positivas y negativas."
+  },
+  {
+    "id": "CASO-LEG-014",
+    "categoria": "Estatuto Parlamentario",
+    "camara": "Congreso de la República",
+    "dificultad": "Avanzado",
+    "titulo": "Régimen Disciplinario de la Comisión de Ética y límites del Pleno",
+    "caso": "La Comisión de Ética Parlamentaria aprueba un informe final donde recomienda imponer a un parlamentario la sanción de suspensión en el ejercicio del cargo y descuento de sus haberes por 90 días de legislatura por grave infracción al principio de transparencia. Al debatirse el informe en el Pleno, un legislador amigo del denunciado presenta una cuestión previa solicitando modificar la sanción a una simple amonestación escrita reservada.",
+    "pregunta": "¿Es reglamentariamente admisible que un parlamentario plantee en el Pleno una sanción distinta a la recomendada por la Comisión de Ética?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Sí, porque el Pleno es el órgano supremo de la cámara y tiene soberanía para fijar o rebajar cualquier sanción disciplinaria."
+      },
+      {
+        "id": "b",
+        "texto": "No. El reglamento prohíbe expresamente que en el Pleno se proponga una sanción distinta; únicamente la propia Comisión de Ética o la Mesa Directiva pueden variar la sanción antes de votar."
+      },
+      {
+        "id": "c",
+        "texto": "Sí, siempre que la propuesta de rebaja de sanción esté firmada por los portavoces de al menos dos bancadas."
+      },
+      {
+        "id": "d",
+        "texto": "No, porque las sanciones de la Comisión de Ética quedan firmes con su sola aprobación en comisión y no requieren votación en el Pleno."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Artículos 145 del Reglamento del Congreso, Art. 83 del Reglamento de Diputados y Art. 86 del Reglamento del Senado.",
+    "fundamentacion": "Los reglamentos de ambas cámaras y el Reglamento del Congreso establecen de forma taxativa: 'No es admisible en el Pleno que un legislador proponga una sanción distinta a la propuesta por la Mesa Directiva o por la Comisión de Ética Parlamentaria. Solamente estos órganos pueden acordar, antes de la votación en el Pleno, la variación de la sanción propuesta'. El Pleno solo puede votar a favor o en contra del informe acusatorio."
+  },
+  {
+    "id": "CASO-LEG-015",
+    "categoria": "Estatuto Parlamentario",
+    "camara": "Senado de la República",
+    "dificultad": "Avanzado",
+    "titulo": "Distribución competencial en el Juicio Político y Antejuicio (Arts. 99 y 100 Const.)",
+    "caso": "Se presenta una denuncia constitucional contra un Ministro de Estado por la presunta comisión del delito de colusión agravada (delito de función) y por infracción grave a la Constitución. La Comisión Permanente de la Cámara de Diputados acusa al ministro y el Pleno de Diputados aprueba la acusación constitucional. La defensa del ministro sostiene que el proceso ha concluido y que el expediente debe pasar de inmediato a la Fiscalía de la Nación sin intervención del Senado.",
+    "pregunta": "¿Cuál es la función del Senado de la República en el procedimiento de acusación constitucional?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Ninguna; la Cámara de Diputados tiene el monopolio exclusivo del antejuicio y remite la causa de inmediato al Poder Judicial."
+      },
+      {
+        "id": "b",
+        "texto": "El Senado actúa como cámara de juzgamiento: le corresponde debatir la acusación de Diputados y decidir, en juicio político, la suspensión, destitución o inhabilitación del funcionario hasta por diez años, y en antejuicio, declarar si ha lugar a formación de causa penal."
+      },
+      {
+        "id": "c",
+        "texto": "El Senado solo actúa como instancia de apelación si el ministro presenta un recurso de nulidad ante la Mesa Directiva."
+      },
+      {
+        "id": "d",
+        "texto": "El Senado solo interviene si la acusación fue aprobada por menos de dos tercios en la Cámara de Diputados."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Artículos 99 y 100 de la Constitución Política del Perú (modificados por Ley N° 31988) y Reglamento del Senado de la República.",
+    "fundamentacion": "Bajo el diseño bicameral de la Ley N° 31988, se restablece la separación clásica entre acusación y juicio parlamentario: a la Cámara de Diputados le compete investigar y formular la acusación constitucional ante el Senado; y al Senado de la República le corresponde en exclusividad constituirse en tribunal de juzgamiento político para suspender, inhabilitar hasta por 10 años, destituir al funcionario o autorizar la causa penal ante la Corte Suprema."
+  },
+  {
+    "id": "CASO-LEG-016",
+    "categoria": "Técnica Legislativa",
+    "camara": "Congreso de la República",
+    "dificultad": "Intermedio",
+    "titulo": "Cláusulas derogatorias tácitas y genéricas en proposiciones de ley",
+    "caso": "Un proyecto de ley de fomento a las MYPES incluye como Única Disposición Complementaria Derogatoria el siguiente texto: 'Derógase toda norma legal, reglamentaria o administrativa que se oponga a las disposiciones contenidas en la presente ley'. La oficina técnica de asesoría parlamentaria emite una observación formal al respecto.",
+    "pregunta": "¿Cuál es el vicio técnico-legislativo que presenta dicha disposición?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "No presenta ningún vicio; es una cláusula de estilo habitual y plenamente admitida en el derecho parlamentario peruano."
+      },
+      {
+        "id": "b",
+        "texto": "Infracción al principio de derogación expresa: la técnica legislativa proscribe las cláusulas derogatorias genéricas o tácitas, exigiendo identificar con precisión el número de ley, artículo o inciso exacto que se deroga."
+      },
+      {
+        "id": "c",
+        "texto": "El vicio consiste únicamente en que no se puede derogar normas administrativas mediante una ley ordinaria."
+      },
+      {
+        "id": "d",
+        "texto": "El error radica en que debió denominarse Disposición Complementaria Final y no Derogatoria."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Manual de Técnica Legislativa del Congreso (Cap. VI, pág. 68) y Principio de Calidad Parlamentaria (Art. XII del Título Preliminar del Reglamento del Congreso).",
+    "fundamentacion": "Las directrices oficiales de Técnica Legislativa y la jurisprudencia proscriben expresamente las cláusulas derogatorias indeterminadas ('derógase lo que se oponga'). La seguridad jurídica impone la técnica de la derogación expresa, individualizada y taxativa, debiendo citarse con precisión las leyes, decretos legislativos o artículos específicos que son expulsados del ordenamiento."
+  },
+  {
+    "id": "CASO-LEG-017",
+    "categoria": "Técnica Legislativa",
+    "camara": "Cámara de Diputados",
+    "dificultad": "Intermedio",
+    "titulo": "Estándares del Análisis Costo-Beneficio en iniciativas parlamentarias",
+    "caso": "Un grupo de congresistas presenta un proyecto de ley que crea un nuevo régimen de subsidios para estudiantes universitarios. En la sección de Exposición de Motivos, colocan en el acápite de Análisis Costo-Beneficio la frase textual: 'La presente ley no irroga gasto al erario nacional, puesto que cada universidad financiará los subsidios con cargo a sus recursos directamente recaudados'.",
+    "pregunta": "¿Cumple esta formulación con las exigencias reglamentarias y de técnica legislativa?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Sí, porque al señalar que se financia con recursos propios de las universidades queda demostrado que no afecta el Presupuesto General de la República."
+      },
+      {
+        "id": "b",
+        "texto": "No. Es una fórmula cliché que incumple el requisito sustancial del Análisis Costo-Beneficio, el cual exige cuantificar el impacto cuantitativo y cualitativo, costos directos e indirectos, externalidades y afectación real sobre los actores destinatarios."
+      },
+      {
+        "id": "c",
+        "texto": "Sí, siempre que el proyecto cuente con las firmas de los portavoces de la bancada promotora."
+      },
+      {
+        "id": "d",
+        "texto": "No, únicamente porque los congresistas tienen prohibición absoluta de presentar proyectos de ley en materia educativa."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Manual de Técnica Legislativa (Cap. IX, págs. 79-84) y Art. 120 del Reglamento de la Cámara de Diputados.",
+    "fundamentacion": "Tanto el Reglamento del Congreso como el Manual de Técnica Legislativa exigen que el Análisis Costo-Beneficio no sea una mera afirmación retórica o formal. Indicar que 'no genera gasto' cuando se imponen obligaciones prestacionales a entidades públicas o privadas vulnera el estándar de calidad: se debe realizar una evaluación rigurosa del impacto presupuestario, costos operativos, beneficios sociales proyectados y posibles desequilibrios financieros."
+  },
+  {
+    "id": "CASO-LEG-018",
+    "categoria": "Técnica Legislativa",
+    "camara": "Cámara de Diputados",
+    "dificultad": "Avanzado",
+    "titulo": "Prohibición de 'Contrabando Legislativo' y Leyes Ómnibus en Comisiones",
+    "caso": "La Comisión de Defensa de la Cámara de Diputados dictamina un proyecto de ley destinado a actualizar el escalafón de las Fuerzas Armadas. Durante el debate interno, un miembro de la comisión solicita incorporar en el texto sustitutorio final dos artículos que modifican la Ley General de Sociedades Mercantiles para flexibilizar la disolución de empresas privadas. El texto es aprobado e incorporado en el dictamen.",
+    "pregunta": "¿Qué principio fundamental de técnica y procedimiento parlamentario se ha transgredido?",
+    "opciones": [
+      {
+        "id": "a",
+        "texto": "Ninguno, pues las comisiones parlamentarias tienen autonomía absoluta para incorporar cualquier tema mediante textos sustitutorios."
+      },
+      {
+        "id": "b",
+        "texto": "El principio de conexidad y homogeneidad temática (prohibición de contrabando legislativo), ya que todo texto sustitutorio debe guardar estricta relación directa con la materia originaria del proyecto de ley."
+      },
+      {
+        "id": "c",
+        "texto": "Se vulnera únicamente si el proyecto no es revisado por el Ministerio de Economía y Finanzas."
+      },
+      {
+        "id": "d",
+        "texto": "No hay vicio, porque las materias societarias son competencia residual de todas las comisiones ordinarias."
+      }
+    ],
+    "respuesta_correcta": "b",
+    "base_normativa": "Manual de Técnica Legislativa (Cap. XI, pág. 87), Art. XII del Título Preliminar del Reglamento del Congreso y Art. 138 del Reglamento de Diputados.",
+    "fundamentacion": "El principio de unidad de materia y congruencia normativa prohíbe que en los dictámenes de comisiones se introduzcan disposiciones desvinculadas de la iniciativa matriz ('leyes ómnibus' o 'contrabando legislativo'). La inclusión de materias mercantiles ajenas a la defensa nacional desnaturaliza la deliberación informada y vulnera el Principio de Calidad Parlamentaria y el iter legislativo regular."
+  }
+]
